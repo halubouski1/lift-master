@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/media.css">
+      <script>document.documentElement.style.setProperty("--fixed-vh", window.innerHeight + "px");</script>
+      <title>Lift Master</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__container">
+        <div class="header__left">
+            <a class="header__logo" href="/">
+                <img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18">
+            </a>
+            <span class="header__tagline">вертикальный транспорт любого уровня</span>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a class="header__menu-link" href="#hero">Главная</a></li>
+                <li><a class="header__menu-link" href="#lifts">Лифты</a></li>
+                <li><a class="header__menu-link" href="#escalators">Эскалаторы и движущиеся дорожки</a></li>
+                <li><a class="header__menu-link" href="#projects">Проекты</a></li>
+                <li><a class="header__menu-link" href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__right">
+            <div class="header__actions">
+                <a class="header__action" href="#catalog">
+                    <span>Каталог</span>
+                    <img src="assets/icons/header-link-arrow.svg" alt="" width="8" height="8" aria-hidden="true">
+                </a>
+                <button class="header__action"  data-popup-open="modal">
+                    <span>Обсудить проект</span>
+                    <img src="assets/icons/header-link-arrow.svg" alt="" width="8" height="8" aria-hidden="true">
+                </button>
+            </div>
+
+            <button class="header__burger" type="button" aria-label="Открыть меню">
+                <img src="assets/icons/burger-menu.svg" alt="" width="19" height="11" aria-hidden="true">
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="hero">
+        <div class="hero__slides">
+            <div class="hero__slide is-active" style="background-image: url('assets/img/hero-bg-1.webp');"></div>
+            <div class="hero__slide" style="background-image: url('assets/img/hero-bg-2.webp');"></div>
+        </div>
+
+        <div class="container hero__container">
+            <div class="hero__top">
+                <h1 class="hero__title">Надежные лифтовые системы от лидеров мировой индустрии</h1>
+            </div>
+
+            <div class="hero__bottom">
+                <p class="hero__text">Высококачественные лифты любой грузоподъёмности.<br> От доступных до премиальных решений.</p>
+
+                <div class="hero__actions">
+                    <a class="header__btn btn--light">О компании</a>
+                    <a class="header__btn btn--outline" href="https://wa.me/77000000000" target="_blank" rel="noopener">Написать в WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__pagination" role="tablist" aria-label="Слайды"></div>
+    </section>
+
+    <section class="solutions" id="solutions">
+        <div class="solutions__marquee">
+            <div class="solutions__marquee-track">
+                <ul class="solutions__marquee-group">
+                    <li><img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18"></li>
+                </ul>
+                <ul class="solutions__marquee-group" aria-hidden="true">
+                    <li><img src="assets/icons/logo.svg" alt="" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="" width="146" height="18"></li>
+                    <li><img src="assets/icons/logo.svg" alt="" width="146" height="18"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container solutions__container">
+            <img class="solutions__watermark" src="assets/icons/logo-curved.svg" alt="" width="1793" height="787" aria-hidden="true">
+
+            <h2 class="solutions__title" data-aos="fade-up">Решения, которые поднимают проекты на новый уровень</h2>
+
+            <div class="solutions__row" data-aos="fade-up" data-aos-duration="900">
+                <ul class="solutions__stats">
+                    <li class="solutions__stat">
+                        <span class="solutions__stat-value"><span class="js-count" data-count="10">10</span> м/с</span>
+                        <span class="solutions__stat-label">Максимальная скорость лифта</span>
+                    </li>
+                    <li class="solutions__stat">
+                        <span class="solutions__stat-value"><span class="js-count" data-count="150">150</span> м</span>
+                        <span class="solutions__stat-label">Максимальная высота подъёма</span>
+                    </li>
+                </ul>
+
+                <div class="solutions__media">
+                    <img class="solutions__image" src="assets/img/solutions.png" alt="Панорамный лифт в жилом комплексе" width="629" height="1132">
+
+                    <p class="solutions__text">Надёжные решения для жилых зданий, бизнес-центров, гостиниц, торговых центров и инфраструктурных объектов.</p>
+                </div>
+
+                <ul class="solutions__stats">
+                    <li class="solutions__stat">
+                        <span class="solutions__stat-value"><span class="js-count" data-count="5000">5,000</span> кг</span>
+                        <span class="solutions__stat-label">Максимальная грузоподъёмность</span>
+                    </li>
+                    <li class="solutions__stat">
+                        <span class="solutions__stat-value"><span class="js-count" data-count="5">5</span> лет</span>
+                        <span class="solutions__stat-label">Гарантия на оборудование</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container about__container" data-aos="fade-up">
+            <div class="about__left">
+                <p class="about__note">/Международная инженерная экспертиза, адаптированная под ваш проект</p>
+
+                <ul class="about__list">
+                    <li class="about__item">Один производитель</li>
+                    <li class="about__item">Единый инженерный стандарт</li>
+                    <li class="about__item">Полное сопровождение проекта</li>
+                </ul>
+            </div>
+
+            <div class="about__right">
+                <p class="about__text">LIFT MASTER поставляет современные системы вертикального транспорта для строительных и девелоперских проектов.</p>
+                <p class="about__text">Мы работаем с лифтовыми компаниями, девелоперами, архитекторами и инженерными командами по всему Казахстану, обеспечивая техническую поддержку на каждом этапе реализации проекта.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="work" id="work">
+  <div class="container work__container">
+
+  <div class="work__header">
+    <h2 class="work__title" data-aos="fade-up" data-aos-duration="900"><span class="work__title-accent">\\ Готово к интеграции</span> в проекты Казахстана</h2>
+  </div>
+
+  <div class="work__grid" data-aos="fade-up" data-aos-duration="900">
+
+    <!-- 01: image card -->
+    <div class="work-card work-card--img" style="background-image: url('assets/img/work-card-1.webp')">
+      <div class="work-card__head">
+        <span class="work-card__num">[ 01</span>
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.68066 2.276L0.942667 8.014L0 7.07133L5.73733 1.33333H0.680667V0H8.01399V7.33333H6.68066V2.276Z" fill="white" fill-opacity="0.4" />
+          </svg>
+      </div>
+    </div>
+
+    <!-- 02: text card -->
+    <div class="work-card work-card--text work-card--text--first">
+      <div class="work-card__top">
+        <div class="work-card__head">
+          <span class="work-card__num">[ 02</span>
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.33301 5.73792L7.07101 -8.39233e-05L8.01367 0.942582L2.27634 6.68058L7.33301 6.68058V8.01392L-0.000322342 8.01392L-0.000322342 0.680583H1.33301L1.33301 5.73792Z" fill="white" fill-opacity="0.4"/>
+          </svg>
+        </div>
+        <span class="work-card__desc">Каждая единица оборудования поставляется с официальным паспортом, содержащим технические характеристики, идентификационные данные и требования к эксплуатации.</span>
+      </div>
+      <h3 class="work-card__title">Паспорт оборудования для каждой единицы</h3>
+    </div>
+
+    <!-- plain: description (no border) -->
+    <div class="work-card work-card--plain">
+      <p class="work-card__info">Оборудование SWORD поставляется с документацией, необходимой для проектирования, монтажа, ввода в эксплуатацию и дальнейшего использования.</p>
+    </div>
+
+    <!-- 03: text card -->
+    <div class="work-card work-card--text work-card--text--second">
+      <div class="work-card__top">
+        <div class="work-card__head">
+          <span class="work-card__num">[ 03</span>
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.33301 5.73792L7.07101 -8.39233e-05L8.01367 0.942582L2.27634 6.68058L7.33301 6.68058V8.01392L-0.000322342 8.01392L-0.000322342 0.680583H1.33301L1.33301 5.73792Z" fill="white" fill-opacity="0.4"/>
+          </svg>
+        </div>
+        <span class="work-card__desc">В комплект входят материалы, необходимые для подготовки проекта и интеграции оборудования в здание.</span>
+      </div>
+      <h3 class="work-card__title">Документация для проектирования</h3>
+    </div>
+
+    <!-- plus card (no border) -->
+    <div class="work-card work-card--plus">
+      <span class="work-card__plus">+</span>
+    </div>
+
+    <!-- 04: image card -->
+    <div class="work-card work-card--img" style="background-image: url('assets/img/work-card-2.webp')">
+      <div class="work-card__head">
+        <span class="work-card__num">[ 04</span>
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.68066 2.276L0.942667 8.014L0 7.07133L5.73733 1.33333H0.680667V0H8.01399V7.33333H6.68066V2.276Z" fill="white" fill-opacity="0.4" />
+          </svg>
+      </div>
+    </div>
+
+    <!-- bottom-text card (no border) -->
+    <div class="work-card work-card--bottom-text">
+      <p class="work-card__bottom-info">Вся техническая документация предоставляется на русском и казахском языках.</p>
+    </div>
+
+    <!-- 05: text card -->
+    <div class="work-card work-card--text work-card--text--third">
+      <div class="work-card__top">
+        <div class="work-card__head">
+          <span class="work-card__num">[ 05</span>
+          <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.33301 5.73792L7.07101 -8.39233e-05L8.01367 0.942582L2.27634 6.68058L7.33301 6.68058V8.01392L-0.000322342 8.01392L-0.000322342 0.680583H1.33301L1.33301 5.73792Z" fill="white" fill-opacity="0.4"/>
+          </svg>
+        </div>
+        <span class="work-card__desc">Сертификаты подтверждают соответствие оборудования и его компонентов безопасности действующим техническим требованиям.</span>
+      </div>
+      <h3 class="work-card__title">Сертификаты на оборудование и компоненты безопасности</h3>
+    </div>
+
+    <!-- CTA button card (no border) -->
+    <div class="work-card work-card--cta">
+      <button class="work-card__btn" data-popup-open="modal">
+        Запросить документацию
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.76837 2.98725L1.23725 10.5184L0 9.28113L7.53024 1.75H0.893375V0H10.5184V9.625H8.76837V2.98725Z" fill="white" />
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  </div>
+</section>
+    <section class="stats" id="stats" data-aos="fade-up">
+        <div class="container">
+            <div class="stats__top">
+                <span class="stats__num">01</span>
+                <span class="stats__line"></span>
+                <span class="stats__num">06</span>
+            </div>
+        </div>
+
+        <div class="swiper stats__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide stats__card">
+                    <img class="stats__card-img" src="assets/img/stats-card-1.webp" alt="" width="425" height="518" loading="lazy">
+
+                    <div class="stats__card-info">
+                        <span class="stats__card-value">380,000 m²</span>
+                        <span class="stats__card-label">Площадь производственных комплексов</span>
+                    </div>
+                </div>
+                <div class="swiper-slide stats__card">
+                    <img class="stats__card-img" src="assets/img/stats-card-2.webp" alt="" width="425" height="303" loading="lazy">
+
+                    <div class="stats__card-info">
+                        <span class="stats__card-value">3,500+</span>
+                        <span class="stats__card-label">Сотрудников</span>
+                    </div>
+                </div>
+                <div class="swiper-slide stats__card">
+                    <img class="stats__card-img" src="assets/img/stats-card-3.webp" alt="" width="517" height="543" loading="lazy">
+
+                    <div class="stats__card-info">
+                        <span class="stats__card-value">53,000</span>
+                        <span class="stats__card-label">Единиц оборудования производится ежегодно</span>
+                    </div>
+                </div>
+                <div class="swiper-slide stats__card">
+                    <img class="stats__card-img" src="assets/img/stats-card-4.webp" alt="" width="326" height="372" loading="lazy">
+
+                    <div class="stats__card-info">
+                        <span class="stats__card-value">23+</span>
+                        <span class="stats__card-label">Страны поставок</span>
+                    </div>
+                </div>
+                <div class="swiper-slide stats__card">
+                    <img class="stats__card-img" src="assets/img/stats-card-5.webp" alt="" width="532" height="372" loading="lazy">
+
+                    <div class="stats__card-info">
+                        <span class="stats__card-value">158,500</span>
+                        <span class="stats__card-label">Единиц оборудования в эксплуатации</span>
+                    </div>
+                </div>
+                <div class="swiper-slide stats__card">
+                    <img class="stats__card-img" src="assets/img/stats-card-6.webp" alt="" width="517" height="543" loading="lazy">
+
+                    <div class="stats__card-info">
+                        <span class="stats__card-value">30+</span>
+                        <span class="stats__card-label">Лет инженерного опыта</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container stats__bottom">
+            <div class="stats__nav">
+                <button class="stats__nav-btn stats__nav-btn--prev" type="button" aria-label="Предыдущий слайд">
+                    <span class="stats__nav-icon"></span>
+                </button>
+                <button class="stats__nav-btn stats__nav-btn--next" type="button" aria-label="Следующий слайд">
+                    <span class="stats__nav-icon"></span>
+                </button>
+            </div>
+
+            <div class="stats__footer">
+                <span class="stats__caption">Lift Master в цифрах</span>
+                <p class="stats__text">Создано для ежедневного перемещения миллионов людей</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="transport" id="transport">
+        <div class="transport__inner">
+            <div class="transport__left">
+                <h2 class="transport__title">Вертикальный транспорт для зданий любого типа</h2>
+
+                <img class="transport__decor" src="assets/img/transport-decor.png" alt="" width="419" height="602" aria-hidden="true">
+
+                <p class="transport__text">Полный ассортимент лифтов, эскалаторов и движущихся дорожек для жилых, коммерческих и общественных объектов.</p>
+            </div>
+
+            <span class="transport__arrow" aria-hidden="true"></span>
+
+            <div class="transport__cards">
+            <article class="transport-card" data-aos="fade-up" data-aos-duration="900">
+                <div class="transport-card__top">
+                    <img class="transport-card__img" src="assets/img/transport-card-1.png" alt="Пассажирский лифт" width="312" height="372" loading="lazy">
+
+                    <ul class="transport-card__specs">
+                        <li class="transport-card__spec">
+                            <span class="transport-card__spec-label">Высота подъёма:</span>
+                            <span class="transport-card__spec-value">до 150 м</span>
+                        </li>
+                        <li class="transport-card__line" aria-hidden="true"></li>
+                        <li class="transport-card__spec">
+                            <span class="transport-card__spec-label">Скорость:</span>
+                            <span class="transport-card__spec-value">1–10 м/с</span>
+                        </li>
+                        <li class="transport-card__line" aria-hidden="true"></li>
+                        <li class="transport-card__spec">
+                            <span class="transport-card__spec-label">Грузоподъёмность:</span>
+                            <span class="transport-card__spec-value">400–5,000 кг</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="transport-card__bottom">
+                    <h3 class="transport-card__title">Пассажирские лифты с машинным помещением</h3>
+
+                    <div class="transport-card__footer">
+                        <p class="transport-card__text">Высокопроизводительные решения для жилых комплексов, офисов, гостиниц, торговых центров и бизнес-центров.</p>
+                        <a class="transport-card__btn" href="#catalog">Подробнее</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="transport-card" data-aos="fade-up" data-aos-duration="900">
+                <div class="transport-card__top">
+                    <img class="transport-card__img" src="assets/img/transport-card-1.png" alt="Пассажирский лифт" width="312" height="372" loading="lazy">
+
+                    <ul class="transport-card__specs">
+                        <li class="transport-card__spec">
+                            <span class="transport-card__spec-label">Высота подъёма:</span>
+                            <span class="transport-card__spec-value">до 150 м</span>
+                        </li>
+                        <li class="transport-card__line" aria-hidden="true"></li>
+                        <li class="transport-card__spec">
+                            <span class="transport-card__spec-label">Скорость:</span>
+                            <span class="transport-card__spec-value">1–10 м/с</span>
+                        </li>
+                        <li class="transport-card__line" aria-hidden="true"></li>
+                        <li class="transport-card__spec">
+                            <span class="transport-card__spec-label">Грузоподъёмность:</span>
+                            <span class="transport-card__spec-value">400–5,000 кг</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="transport-card__bottom">
+                    <h3 class="transport-card__title">Пассажирские лифты с машинным помещением</h3>
+
+                    <div class="transport-card__footer">
+                        <p class="transport-card__text">Высокопроизводительные решения для жилых комплексов, офисов, гостиниц, торговых центров и бизнес-центров.</p>
+                        <a class="transport-card__btn" href="#catalog">Подробнее</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="transport-card" data-aos="fade-up" data-aos-duration="900">
+                <div class="transport-card__top">
+                    <img class="transport-card__img" src="assets/img/transport-card-1.png" alt="Пассажирский лифт" width="312" height="372" loading="lazy">
+
+                    <ul class="transport-card__specs">
+                        <li class="transport-card__spec">
+                            <span class="transport-card__spec-label">Высота подъёма:</span>
+                            <span class="transport-card__spec-value">до 150 м</span>
+                        </li>
+                        <li class="transport-card__line" aria-hidden="true"></li>
+                        <li class="transport-card__spec">
+                            <span class="transport-card__spec-label">Скорость:</span>
+                            <span class="transport-card__spec-value">1–10 м/с</span>
+                        </li>
+                        <li class="transport-card__line" aria-hidden="true"></li>
+                        <li class="transport-card__spec">
+                            <span class="transport-card__spec-label">Грузоподъёмность:</span>
+                            <span class="transport-card__spec-value">400–5,000 кг</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="transport-card__bottom">
+                    <h3 class="transport-card__title">Пассажирские лифты с машинным помещением</h3>
+
+                    <div class="transport-card__footer">
+                        <p class="transport-card__text">Высокопроизводительные решения для жилых комплексов, офисов, гостиниц, торговых центров и бизнес-центров.</p>
+                        <a class="transport-card__btn" href="#catalog">Подробнее</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="transport-card" data-aos="fade-up" data-aos-duration="900">
+                <div class="transport-card__top">
+                    <img class="transport-card__img" src="assets/img/transport-card-1.png" alt="Пассажирский лифт" width="312" height="372" loading="lazy">
+
+                    <ul class="transport-card__specs">
+                        <li class="transport-card__spec">
+                            <span class="transport-card__spec-label">Высота подъёма:</span>
+                            <span class="transport-card__spec-value">до 150 м</span>
+                        </li>
+                        <li class="transport-card__line" aria-hidden="true"></li>
+                        <li class="transport-card__spec">
+                            <span class="transport-card__spec-label">Скорость:</span>
+                            <span class="transport-card__spec-value">1–10 м/с</span>
+                        </li>
+                        <li class="transport-card__line" aria-hidden="true"></li>
+                        <li class="transport-card__spec">
+                            <span class="transport-card__spec-label">Грузоподъёмность:</span>
+                            <span class="transport-card__spec-value">400–5,000 кг</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="transport-card__bottom">
+                    <h3 class="transport-card__title">Пассажирские лифты с машинным помещением</h3>
+
+                    <div class="transport-card__footer">
+                        <p class="transport-card__text">Высокопроизводительные решения для жилых комплексов, офисов, гостиниц, торговых центров и бизнес-центров.</p>
+                        <a class="transport-card__btn" href="#catalog">Подробнее</a>
+                    </div>
+                </div>
+            </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="production" id="production" data-aos="fade-up">
+        <div class="container production__head">
+            <h2 class="production__title">Лифтовая продукция от LIFT MASTER</h2>
+
+            <div class="stats__nav production__nav">
+                <button class="stats__nav-btn production__nav-btn production__nav-btn--prev" type="button" aria-label="Предыдущий слайд">
+                    <span class="stats__nav-icon"></span>
+                </button>
+                <button class="stats__nav-btn production__nav-btn production__nav-btn--next" type="button" aria-label="Следующий слайд">
+                    <span class="stats__nav-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="swiper production__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide production-card">
+                    <div class="production-card__media">
+                        <img class="production-card__img" src="assets/img/production-card-1.webp" alt="Грузовые лифты" width="492" height="663" loading="lazy">
+
+                        <button class="production-card__plus" type="button" aria-label="Подробнее о категории «Грузовые»">+</button>
+                    </div>
+
+                    <div class="production-card__bottom">
+                        <div class="production-card__info">
+                            <span class="production-card__weight">1000-5000 кг</span>
+                            <span class="production-card__name">Грузовые</span>
+                        </div>
+
+                        <a class="production-card__link" href="#catalog">Подробнее</a>
+                    </div>
+                </div>
+                <div class="swiper-slide production-card">
+                    <div class="production-card__media">
+                        <img class="production-card__img" src="assets/img/production-card-2.webp" alt="Пассажирские лифты" width="492" height="663" loading="lazy">
+
+                        <button class="production-card__plus" type="button" aria-label="Подробнее о категории «Пассажирские»">+</button>
+                    </div>
+
+                    <div class="production-card__bottom">
+                        <div class="production-card__info">
+                            <span class="production-card__weight">100-120 кг</span>
+                            <span class="production-card__name">Пассажирские</span>
+                        </div>
+
+                        <a class="production-card__link" href="#catalog">Подробнее</a>
+                    </div>
+                </div>
+                <div class="swiper-slide production-card">
+                    <div class="production-card__media">
+                        <img class="production-card__img" src="assets/img/production-card-3.webp" alt="Коттеджные лифты" width="492" height="663" loading="lazy">
+
+                        <button class="production-card__plus" type="button" aria-label="Подробнее о категории «Коттеджные»">+</button>
+                    </div>
+
+                    <div class="production-card__bottom">
+                        <div class="production-card__info">
+                            <span class="production-card__weight">100-120 кг</span>
+                            <span class="production-card__name">Коттеджные</span>
+                        </div>
+
+                        <a class="production-card__link" href="#catalog">Подробнее</a>
+                    </div>
+                </div>
+                <div class="swiper-slide production-card">
+                    <div class="production-card__media">
+                        <img class="production-card__img" src="assets/img/production-card-4.webp" alt="Панорамные лифты" width="492" height="663" loading="lazy">
+
+                        <button class="production-card__plus" type="button" aria-label="Подробнее о категории «Панорамные»">+</button>
+                    </div>
+
+                    <div class="production-card__bottom">
+                        <div class="production-card__info">
+                            <span class="production-card__weight">500-600 кг</span>
+                            <span class="production-card__name">Панорамные</span>
+                        </div>
+
+                        <a class="production-card__link" href="#catalog">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="turnkey" id="projects" data-aos="fade-up">
+        <div class="container turnkey__head">
+            <h2 class="turnkey__title">Оснащаем объекты под ключ</h2>
+
+            <div class="turnkey__aside">
+                <span class="turnkey__label">100+ реализованных проектов</span>
+
+                <div class="stats__nav turnkey__nav">
+                    <button class="stats__nav-btn turnkey__nav-btn turnkey__nav-btn--prev" type="button" aria-label="Предыдущий слайд">
+                        <span class="stats__nav-icon"></span>
+                    </button>
+                    <button class="stats__nav-btn turnkey__nav-btn turnkey__nav-btn--next" type="button" aria-label="Следующий слайд">
+                        <span class="stats__nav-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper turnkey__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide turnkey-card">
+                    <img class="turnkey-card__img" src="assets/img/turnkey-card-1.webp" alt="МТЦ «EL RIO»" width="583" height="781" loading="lazy">
+
+                    <div class="turnkey-card__top">
+                        <div class="turnkey-card__col turnkey-card__col--left">
+                            <span class="turnkey-card__count">10</span>
+                            <span class="turnkey-card__count-label">лифтов</span>
+                        </div>
+
+                        <div class="turnkey-card__col turnkey-card__col--right">
+                            <div class="turnkey-card__meta">
+                                <span class="turnkey-card__num">001</span>
+                                <img class="turnkey-card__progress" src="assets/icons/turnkey.svg" alt="" width="52" height="12">
+                            </div>
+
+                            <a class="turnkey-card__btn" href="#projects">
+                                <span class="turnkey-card__btn-full">Узнать подробнее</span>
+                                <span class="turnkey-card__btn-short">Подробнее</span>
+                                <span class="turnkey-card__btn-icon">
+                                    <img src="assets/icons/header-link-arrow.svg" alt="" width="8" height="8">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="turnkey-card__bottom">
+                        <span class="turnkey-card__location">г. Самара</span>
+                        <h3 class="turnkey-card__title">МТЦ «EL RIO»</h3>
+                        <span class="turnkey-card__desc">Комплексное оснащение торгового центра</span>
+                    </div>
+                </div>
+                <div class="swiper-slide turnkey-card">
+                    <img class="turnkey-card__img" src="assets/img/turnkey-card-2.webp" alt="МТЦ" width="583" height="781" loading="lazy">
+
+                    <div class="turnkey-card__top">
+                        <div class="turnkey-card__col turnkey-card__col--left">
+                            <span class="turnkey-card__count">3</span>
+                            <span class="turnkey-card__count-label">лифта</span>
+                        </div>
+
+                        <div class="turnkey-card__col turnkey-card__col--right">
+                            <div class="turnkey-card__meta">
+                                <span class="turnkey-card__num">002</span>
+                                <img class="turnkey-card__progress" src="assets/icons/turnkey.svg" alt="" width="52" height="12">
+                            </div>
+
+                            <a class="turnkey-card__btn" href="#projects">
+                                <span class="turnkey-card__btn-full">Узнать подробнее</span>
+                                <span class="turnkey-card__btn-short">Подробнее</span>
+                                <span class="turnkey-card__btn-icon">
+                                    <img src="assets/icons/header-link-arrow.svg" alt="" width="8" height="8">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="turnkey-card__bottom">
+                        <span class="turnkey-card__location">г. Нефтеюганск</span>
+                        <h3 class="turnkey-card__title">МТЦ</h3>
+                        <span class="turnkey-card__desc">Оборудование для стабильного пассажиропотока</span>
+                    </div>
+                </div>
+                <div class="swiper-slide turnkey-card">
+                    <img class="turnkey-card__img" src="assets/img/turnkey-card-3.webp" alt="МТЦ «Рандеву»" width="583" height="781" loading="lazy">
+
+                    <div class="turnkey-card__top">
+                        <div class="turnkey-card__col turnkey-card__col--left">
+                            <span class="turnkey-card__count">7</span>
+                            <span class="turnkey-card__count-label">лифтов</span>
+                        </div>
+
+                        <div class="turnkey-card__col turnkey-card__col--right">
+                            <div class="turnkey-card__meta">
+                                <span class="turnkey-card__num">003</span>
+                                <img class="turnkey-card__progress" src="assets/icons/turnkey.svg" alt="" width="52" height="12">
+                            </div>
+
+                            <a class="turnkey-card__btn" href="#projects">
+                                <span class="turnkey-card__btn-full">Узнать подробнее</span>
+                                <span class="turnkey-card__btn-short">Подробнее</span>
+                                <span class="turnkey-card__btn-icon">
+                                    <img src="assets/icons/header-link-arrow.svg" alt="" width="8" height="8">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="turnkey-card__bottom">
+                        <span class="turnkey-card__location">г. Нефтеюганск</span>
+                        <h3 class="turnkey-card__title">МТЦ «Рандеву»</h3>
+                        <span class="turnkey-card__desc">Комплексное решение для торгового объекта</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comfort" id="comfort">
+        <img class="comfort__watermark" src="assets/icons/comfort-bg-logo.svg" alt="" width="1505" height="864" aria-hidden="true">
+
+        <div class="container comfort__head">
+            <h2 class="comfort__title">Комфорт, который замечают пассажиры</h2>
+
+            <div class="comfort__aside">
+                <img class="comfort__logo" src="assets/icons/logo-dark.svg" alt="Lift Master" width="146" height="18">
+                <span class="comfort__line"></span>
+                <p class="comfort__text">Технологии, которым доверяют профессионалы.</p>
+            </div>
+        </div>
+
+        <div class="comfort__marquee">
+            <div class="comfort__marquee-track">
+                <div class="comfort__marquee-group">
+                    <article class="comfort-card">
+                        <h3 class="comfort-card__title">Энергоэффективность</h3>
+                        <p class="comfort-card__text">Освещение и вентиляция могут автоматически переходить в режим ожидания, когда кабина не используется.</p>
+                    </article>
+                    <article class="comfort-card">
+                        <h3 class="comfort-card__title">Низкий уровень шума</h3>
+                        <p class="comfort-card__text">Тихая работа делает оборудование LIFT MASTER подходящим для жилых зданий, гостиниц и коммерческих объектов премиум-класса.</p>
+                    </article>
+                    <article class="comfort-card">
+                        <h3 class="comfort-card__title">Плавное движение</h3>
+                        <p class="comfort-card__text">Современные системы привода и управления скоростью обеспечивают плавный разгон, движение и торможение.</p>
+                    </article>
+                    <article class="comfort-card">
+                        <h3 class="comfort-card__title">Интеллектуальная диагностика</h3>
+                        <p class="comfort-card__text">Система управления контролирует критически важные рабочие параметры и выявляет возможные неисправности.</p>
+                    </article>
+                </div>
+                <div class="comfort__marquee-group" aria-hidden="true">
+                    <article class="comfort-card">
+                        <h3 class="comfort-card__title">Энергоэффективность</h3>
+                        <p class="comfort-card__text">Освещение и вентиляция могут автоматически переходить в режим ожидания, когда кабина не используется.</p>
+                    </article>
+                    <article class="comfort-card">
+                        <h3 class="comfort-card__title">Низкий уровень шума</h3>
+                        <p class="comfort-card__text">Тихая работа делает оборудование LIFT MASTER подходящим для жилых зданий, гостиниц и коммерческих объектов премиум-класса.</p>
+                    </article>
+                    <article class="comfort-card">
+                        <h3 class="comfort-card__title">Плавное движение</h3>
+                        <p class="comfort-card__text">Современные системы привода и управления скоростью обеспечивают плавный разгон, движение и торможение.</p>
+                    </article>
+                    <article class="comfort-card">
+                        <h3 class="comfort-card__title">Интеллектуальная диагностика</h3>
+                        <p class="comfort-card__text">Система управления контролирует критически важные рабочие параметры и выявляет возможные неисправности.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="transition" id="transition" data-aos="fade-up">
+        <div class="container transition__head">
+            <h2 class="transition__title">Разработано с учётом того, как перемещаются люди</h2>
+
+            <div class="stats__nav transition__nav">
+                <button class="stats__nav-btn transition__nav-btn transition__nav-btn--prev" type="button" aria-label="Предыдущий слайд">
+                    <span class="stats__nav-icon"></span>
+                </button>
+                <button class="stats__nav-btn transition__nav-btn transition__nav-btn--next" type="button" aria-label="Следующий слайд">
+                    <span class="stats__nav-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="swiper transition__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide transition-card">
+                    <div class="transition-card__media">
+                        <img class="transition-card__img" src="assets/img/transition-card-1.webp" alt="" width="491" height="632" loading="lazy">
+
+                        <a class="transition-card__btn" href="#catalog">
+                            Смотреть
+                            <img src="assets/icons/transition-btn-arrow.svg" alt="" width="12" height="12">
+                        </a>
+                    </div>
+
+                    <div class="transition-card__bottom">
+                        <span class="transition-card__name">Жилые<br>комплексы</span>
+                        <p class="transition-card__text">Энергоэффективные лифты<br>для ежедневного комфорта.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide transition-card">
+                    <div class="transition-card__media">
+                        <img class="transition-card__img" src="assets/img/transition-card-2.webp" alt="" width="491" height="632" loading="lazy">
+
+                        <a class="transition-card__btn" href="#catalog">
+                            Смотреть
+                            <img src="assets/icons/transition-btn-arrow.svg" alt="" width="12" height="12">
+                        </a>
+                    </div>
+
+                    <div class="transition-card__bottom">
+                        <span class="transition-card__name">Бизнес-<br>центры</span>
+                        <p class="transition-card__text">Эффективное управление<br>пассажиропотоком в часы пик.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide transition-card">
+                    <div class="transition-card__media">
+                        <img class="transition-card__img" src="assets/img/transition-card-3.webp" alt="" width="491" height="632" loading="lazy">
+
+                        <a class="transition-card__btn" href="#catalog">
+                            Смотреть
+                            <img src="assets/icons/transition-btn-arrow.svg" alt="" width="12" height="12">
+                        </a>
+                    </div>
+
+                    <div class="transition-card__bottom">
+                        <span class="transition-card__name">Торговые<br>центры</span>
+                        <p class="transition-card__text">Удобное перемещение магазинных<br>тележек и детских колясок.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide transition-card">
+                    <div class="transition-card__media">
+                        <img class="transition-card__img" src="assets/img/transition-card-4.webp" alt="" width="491" height="632" loading="lazy">
+
+                        <a class="transition-card__btn" href="#catalog">
+                            Смотреть
+                            <img src="assets/icons/transition-btn-arrow.svg" alt="" width="12" height="12">
+                        </a>
+                    </div>
+
+                    <div class="transition-card__bottom">
+                        <span class="transition-card__name">Общественные<br>здания</span>
+                        <p class="transition-card__text">Для образовательных<br>и инфраструктурных объектов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="geography" id="geography">
+        <div class="container geography__head" data-aos="fade-up">
+            <h2 class="geography__title">Поставляем вертикальный транспорт по всему Казахстану</h2>
+
+            <p class="geography__text">Мы производим, комплектуем и поставляем оборудование для проектов в разных регионах страны. Каждая партия подготавливается к транспортировке и страхуется на всём маршруте доставки.</p>
+
+            <a class="geography__btn btn--light header__btn" href="#projects">Посмотреть карту проектов</a>
+        </div>
+
+        <div class="geography__marquee">
+            <div class="geography__marquee-track">
+                <div class="geography__marquee-group">
+                    <div class="geography-stat">
+                        <span class="geography-stat__value">380K</span>
+                        <span class="geography-stat__label">м2 площадь<br class="br-mobile">производства</span>
+                    </div>
+                    <div class="geography-stat">
+                        <span class="geography-stat__value">3 500</span>
+                        <span class="geography-stat__label">сотрудников<br class="br-mobile">в штате</span>
+                    </div>
+                    <div class="geography-stat">
+                        <span class="geography-stat__value">11</span>
+                        <span class="geography-stat__label">на российском<br class="br-mobile">рынке</span>
+                    </div>
+                    <div class="geography-stat">
+                        <span class="geography-stat__value">120</span>
+                        <span class="geography-stat__label">срок производства<br class="br-mobile">и поставки</span>
+                    </div>
+                    <div class="geography-stat">
+                        <span class="geography-stat__value">23</span>
+                        <span class="geography-stat__label">Страны обеспечили<br class="br-mobile">лифтами</span>
+                    </div>
+                </div>
+                <div class="geography__marquee-group" aria-hidden="true">
+                    <div class="geography-stat">
+                        <span class="geography-stat__value">380K</span>
+                        <span class="geography-stat__label">м2 площадь<br class="br-mobile">производства</span>
+                    </div>
+                    <div class="geography-stat">
+                        <span class="geography-stat__value">3 500</span>
+                        <span class="geography-stat__label">сотрудников<br class="br-mobile">в штате</span>
+                    </div>
+                    <div class="geography-stat">
+                        <span class="geography-stat__value">11</span>
+                        <span class="geography-stat__label">на российском<br class="br-mobile">рынке</span>
+                    </div>
+                    <div class="geography-stat">
+                        <span class="geography-stat__value">120</span>
+                        <span class="geography-stat__label">срок производства<br class="br-mobile">и поставки</span>
+                    </div>
+                    <div class="geography-stat">
+                        <span class="geography-stat__value">23</span>
+                        <span class="geography-stat__label">Страны обеспечили<br class="br-mobile">лифтами</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="contacts">
+        <div class="cta__inner">
+            <span class="cta__glass" aria-hidden="true"></span>
+
+            <div class="cta__top">
+                <img class="cta__logo" src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18">
+                <span class="cta__label">Начните проект</span>
+            </div>
+
+            <div class="cta__middle">
+                <div class="cta__middle-row">
+                    <span class="cta__note">Отправьте информацию о вашем проекте.</span>
+
+                    <p class="cta__desc">Наш специалист свяжется с вами, чтобы обсудить подбор оборудования, технические характеристики, документацию и условия доставки.</p>
+                </div>
+
+                <span class="cta__line"></span>
+            </div>
+
+            <div class="cta__bottom">
+                <h2 class="cta__title">Начните проект вместе с LIFT MASTER</h2>
+
+                <button class="header__btn btn--light cta__btn" href="#form" data-popup-open="modal">Отправить заявку</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__content">
+            <div class="footer__nav">
+                <div class="footer__nav-col">
+                    <div class="footer__nav-group">
+                        <span class="footer__nav-title">Навигация</span>
+
+                        <div class="footer__nav-links">
+                            <a class="footer__nav-link" href="#hero">Главная</a>
+                            <a class="footer__nav-link" href="#about">О компании</a>
+                            <a class="footer__nav-link" href="#projects">Проекты</a>
+                            <a class="footer__nav-link" href="#contacts">Контакты</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__nav-group">
+                        <span class="footer__nav-title">Лифты</span>
+
+                        <div class="footer__nav-links">
+                            <a class="footer__nav-link" href="#production">Оборудование</a>
+                            <a class="footer__nav-link" href="#about">Команда</a>
+                            <a class="footer__nav-link" href="#contacts">Вакансии</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__nav-col">
+                    <div class="footer__nav-group">
+                        <span class="footer__nav-title">Эскалаторы и движущиеся дорожки</span>
+
+                        <div class="footer__nav-links">
+                            <a class="footer__nav-link" href="#transport">Что это такое</a>
+                            <a class="footer__nav-link" href="#solutions">Что мы предлагаем</a>
+                            <a class="footer__nav-link" href="#comfort">Преимущества решений</a>
+                            <a class="footer__nav-link" href="#production">Доступные модели</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__nav-group footer__nav-group--right">
+                        <span class="footer__nav-title">Контакты</span>
+
+                        <div class="footer__nav-links">
+                            <a class="footer__nav-link" href="https://instagram.com">Instagram</a>
+                            <a class="footer__nav-link" href="https://t.me">Telegram</a>
+                            <a class="footer__nav-link" href="https://wa.me/77000000000">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="footer__divider"></span>
+
+            <div class="footer__bottom">
+                <button class="footer__scroll-top" type="button" aria-label="Наверх">
+                    <img src="assets/icons/footer-to-top-srrow.svg" alt="" width="12" height="14">
+                </button>
+
+                <div class="footer__email-info">
+                    <div class="footer__email-label-wrapper">
+                        <span class="footer__email-label">Почта</span>
+                        <img src="assets/img/footer-label-decor.svg" alt="" width="10" height="10">
+                    </div>
+
+                    <a class="footer__email" href="mailto:support@liftmaster.kz">support@liftmaster.kz</a>
+                </div>
+            </div>
+
+            <div class="footer__legal">
+                <a class="footer__dev" href="https://fernandes.media" target="_blank" rel="noopener">
+                    <img src="assets/icons/dev-logo.svg" alt="Fernandes Media — website development" width="102" height="42">
+                </a>
+
+                <a class="footer__legal-link" href="#privacy">Политика конфиденциальности</a>
+                <span>Все права защищены</span>
+                <span>© 2026</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Nav Menu -->
+<div class="nav-menu" id="nav-menu">
+  <picture>
+    <source media="(max-width: 570px)" srcset="assets/img/menu-bg-mob.webp">
+    <img class="nav-menu__bg" src="assets/img/menu-bg.webp" alt="">
+  </picture>
+  <img class="nav-menu__brand" src="assets/img/menu-brand.svg" alt="">
+  <div class="nav-menu__inner" data-lenis-prevent>
+
+    <div class="nav-menu__top">
+        <div class="header__left">
+            <a class="header__logo" href="/">
+                <img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18">
+            </a>
+            <span class="header__tagline">вертикальный транспорт любого уровня</span>
+        </div>
+      <button class="nav-menu__close" id="nav-menu-close" aria-label="Close menu">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.51216 18C1.12479 18 0.73743 17.853 0.443122 17.5565C-0.147707 16.9657 -0.147707 16.0078 0.443122 15.417L15.417 0.443113C16.0082 -0.147704 16.966 -0.147704 17.5569 0.443113C18.1477 1.03393 18.1477 1.99179 17.5569 2.58298L2.58266 17.5565C2.2843 17.853 1.8973 18 1.51216 18Z" fill="white"/>
+          <path d="M16.4857 18C16.0987 18 15.7114 17.853 15.4171 17.5565L0.443395 2.58317C-0.147798 1.99229 -0.147798 1.03432 0.443395 0.443438C1.03422 -0.147813 1.99209 -0.147813 2.58292 0.443438L17.5566 15.4186C18.1478 16.0095 18.1478 16.9674 17.5566 17.5583C17.2605 17.853 16.8731 18 16.4857 18Z" fill="white"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="nav-menu__nav">
+      <a href="#hero" class="nav-menu__item">
+        <span class="nav-menu__num">01</span>
+        <span class="nav-menu__item-right">
+          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
+          <span class="nav-menu__item-text">Главная</span>
+        </span>
+      </a>
+      <a href="#about" class="nav-menu__item">
+        <span class="nav-menu__num">02</span>
+        <span class="nav-menu__item-right">
+          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
+          <span class="nav-menu__item-text">Каталог</span>
+        </span>
+      </a>
+      <a href="#contacts" class="nav-menu__item">
+        <span class="nav-menu__num">03</span>
+        <span class="nav-menu__item-right">
+          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
+          <span class="nav-menu__item-text">Лифты</span>
+        </span>
+      </a>
+      <a href="#what-we-do" class="nav-menu__item">
+        <span class="nav-menu__num">04</span>
+        <span class="nav-menu__item-right">
+          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
+          <span class="nav-menu__item-text">Эскалаторы</span>
+        </span>
+      </a>
+      <a href="#work" class="nav-menu__item">
+        <span class="nav-menu__num">05</span>
+        <span class="nav-menu__item-right">
+          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
+          <span class="nav-menu__item-text">Траволаторы</span>
+        </span>
+      </a>
+      <a href="#work" class="nav-menu__item">
+        <span class="nav-menu__num">06</span>
+        <span class="nav-menu__item-right">
+          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
+          <span class="nav-menu__item-text">Контакты</span>
+        </span>
+      </a>
+    </nav>
+
+    <div class="nav-menu__bottom">
+      <div class="nav-menu__lang">
+        <button class="nav-menu__lang-btn nav-menu__lang-btn--active">En</button>
+        <span class="nav-menu__lang-sep"></span>
+        <button class="nav-menu__lang-btn">Ru</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal" data-popup data-lenis-prevent>
+  <div class="modal">
+    <button class="modal__close" id="modal-close" data-popup-close aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.30213 15.5C0.968571 15.5 0.635009 15.3734 0.381578 15.1181C-0.127193 14.6094 -0.127193 13.7845 0.381578 13.2758L13.2757 0.38157C13.7848 -0.12719 14.6097 -0.12719 15.1184 0.38157C15.6272 0.890329 15.6272 1.71516 15.1184 2.22423L2.22396 15.1181C1.96703 15.3734 1.63379 15.5 1.30213 15.5Z" fill="#7B7B7B"/>
+        <path d="M14.1961 15.5C13.8628 15.5 13.5293 15.3734 13.2758 15.1181L0.381812 2.22439C-0.127271 1.71558 -0.127271 0.890664 0.381812 0.381849C0.890577 -0.127283 1.71541 -0.127283 2.22418 0.381849L15.1182 13.2771C15.6273 13.7859 15.6273 14.6108 15.1182 15.1197C14.8632 15.3734 14.5296 15.5 14.1961 15.5Z" fill="#7B7B7B"/>
+      </svg>
+    </button>
+    <div class="modal__body" id="modal-body">
+      <h2 class="modal__title">Оставьте заявку на консультацию</h2>
+      <form class="modal__form" id="modal-form">
+        <div class="modal__row">
+          <input class="modal__input" type="text" placeholder="Name">
+          <input class="modal__input" type="tel" placeholder="+1 (000)-000-00-00">
+        </div>
+        <input class="modal__input modal__input--full" type="email" placeholder="example@mail.com">
+
+        <label class="modal__check">
+          <input class="modal__check-input" type="checkbox" required>
+          <span class="modal__check-box"></span>
+          <span class="modal__check-text">Я согласен на обработку персональных данных и на получение рассылки</span>
+        </label>
+
+        <button class="modal__btn" type="submit">
+           Оставить заявку
+          <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="19.5" cy="19.5" r="19.5" fill="#fff"/>
+            <path d="M23.0027 17.845L15.4716 25.0175L14.2344 23.8392L21.7646 16.6667H15.1278V15H24.7527V24.1667H23.0027V17.845Z" fill="#000"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="modal__success" id="modal-success">
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="17.5" cy="17.5" r="17.5" fill="#402413" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5072 15.1135C24.827 14.767 25.0039 14.3029 24.9999 13.8212C24.9959 13.3395 24.8113 12.8787 24.4859 12.5381C24.1604 12.1975 23.7201 12.0043 23.2599 12.0001C22.7996 11.9959 22.3562 12.1811 22.0251 12.5157L16.2446 18.5655L13.9749 16.19C13.6438 15.8554 13.2004 15.6702 12.7401 15.6744C12.2799 15.6786 11.8396 15.8718 11.5141 16.2124C11.1887 16.553 11.0041 17.0138 11.0001 17.4955C10.9961 17.9772 11.173 18.4413 11.4928 18.7878L15.0035 22.4621C15.3327 22.8065 15.7791 23 16.2446 23C16.7101 23 17.1565 22.8065 17.4857 22.4621L24.5072 15.1135Z" fill="#EDF2F2" />
+        </svg>
+      <p class="modal__success-text">Ваша заявка была успешно получена</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/accordion-js@3.3.4/dist/accordion.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInputWithUtils.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

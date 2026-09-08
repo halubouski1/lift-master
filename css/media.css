@@ -1,0 +1,2642 @@
+/* ==========================================================================
+   ≤1919px — the 1920 layout at 0.75 scale
+   ==========================================================================
+   Every px value from style.css is restated here multiplied by 0.75.
+   Hairlines (1px and under), percentages, em and viewport units are left as
+   they are. Generated from style.css — regenerate after big layout edits. */
+@media (max-width: 1919px) {
+    section[id] {
+        scroll-margin-top: 75px;
+    }
+
+    .container {
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+
+    .header__btn {
+        min-height: 36px;
+        padding: 9.75px 22.5px;
+        border-radius: 26.25px;
+        font-size: 11.25px;
+    }
+
+    .hero__actions .btn--light {
+        min-width: 139.5px;
+    }
+
+    .header__container {
+        padding-top: 37.5px;
+    }
+
+    .header__left {
+        gap: 27.75px;
+    }
+
+    .header__logo img {
+        width: 109.5px;
+    }
+
+    .header__burger img {
+        width: 15px;
+        height: auto;
+    }
+
+    .header__tagline {
+        max-width: 112.5px;
+        font-size: 9.75px;
+    }
+
+    .header__menu {
+        gap: 35.25px;
+    }
+
+    .header__menu-link {
+        font-size: 11.25px;
+    }
+
+    .header__right {
+        gap: 58.5px;
+    }
+
+    .header__actions {
+        gap: 22.5px;
+    }
+
+    .header__action {
+        gap: 3.75px;
+        font-size: 11.25px;
+    }
+
+    .header__action img {
+        width: 6px;
+        height: 6px;
+    }
+
+    .header__burger {
+        width: 29.25px;
+        height: 29.25px;
+        border-radius: 4.5px;
+    }
+
+    .hero__container {
+        padding-top: 146.25px;
+        padding-bottom: 36px;
+    }
+
+    .hero__title {
+        max-width: 555px;
+        font-size: 52.5px;
+    }
+
+    .hero__bottom {
+        gap: 30px;
+    }
+
+    .hero__text {
+        max-width: 510px;
+        font-size: 18.75px;
+    }
+
+    .hero__actions {
+        gap: 10.5px;
+    }
+
+    .hero__pagination {
+        right: 42px;
+        gap: 9.75px;
+    }
+
+    .hero__bullet {
+        width: 1.5px;
+        height: 30px;
+    }
+
+    .hero__bullet.is-active {
+        height: 63px;
+    }
+
+    .solutions {
+        padding-top: 45px;
+    }
+
+    .solutions::before {
+        width: 567.75px;
+        height: 807.75px;
+    }
+
+    .solutions::after {
+        width: 594px;
+        height: 880.5px;
+    }
+
+    .solutions__container {
+        padding-top: 375px;
+    }
+
+    .solutions__marquee-track {
+        gap: 117.75px;
+    }
+
+    .solutions__marquee-group {
+        gap: 117.75px;
+    }
+
+    .solutions__marquee img {
+        width: 109.5px;
+    }
+
+    @keyframes solutionsMarquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(calc(-50% - 58.875px));
+        }
+    }
+
+    .solutions__title {
+        max-width: 742.5px;
+        font-size: 48.75px;
+    }
+
+    .solutions__row {
+        gap: 37.5px;
+        margin-top: 195px;
+    }
+
+    .solutions__watermark {
+        top: 352.5px;
+        width: 1344.75px;
+    }
+
+    .solutions__image {
+        width: 471.75px;
+    }
+
+    .solutions__stats {
+        gap: 46.5px;
+    }
+
+    .solutions__stat {
+        gap: 6px;
+    }
+
+    .solutions__stat-value {
+        font-size: 22.5px;
+    }
+
+    .solutions__stat-label {
+        font-size: 13.5px;
+    }
+
+    .solutions__text {
+        max-width: 393.75px;
+        margin: 60.75px auto 0;
+        font-size: 18.75px;
+    }
+
+    .about {
+        padding-top: 187.5px;
+        padding-bottom: 150px;
+    }
+
+    .about::before {
+        height: 956.25px;
+        background-size: 793.5px 956.25px;
+    }
+
+    .about__container {
+        gap: 225px;
+        padding-left: 112.5px;
+    }
+
+    .about__left {
+        gap: 191.25px;
+    }
+
+    .about__note {
+        max-width: 189px;
+        font-size: 13.5px;
+    }
+
+    .about__list {
+        gap: 17.25px;
+    }
+
+    .about__item {
+        width: 169.5px;
+        font-size: 15.75px;
+    }
+
+    .about__item:not(:last-child) {
+        padding-bottom: 17.25px;
+    }
+
+    .about__right {
+        gap: 75px;
+        max-width: 706.5px;
+    }
+
+    .about__text {
+        font-size: 37.5px;
+    }
+
+    .work {
+        padding-bottom: 225px;
+    }
+
+    .work::before {
+        width: 1257px;
+        height: 1510.5px;
+    }
+
+    .work::after {
+        height: 150px;
+    }
+
+    .work__header {
+        margin-bottom: 48px;
+    }
+
+    .work__title {
+        font-size: 33.75px;
+    }
+
+    .work-card {
+        min-height: 318.75px;
+    }
+
+    .work-card--img {
+        padding: 30px;
+    }
+
+    .work-card--text {
+        padding: 30px;
+    }
+
+    .work-card__top {
+        gap: 9.75px;
+    }
+
+    .work-card__num {
+        font-size: 12px;
+    }
+
+    .work-card__desc {
+        font-size: 12px;
+    }
+
+    .work-card--text--first .work-card__desc {
+        max-width: 306px;
+    }
+
+    .work-card--text--second .work-card__desc {
+        max-width: 213.75px;
+    }
+
+    .work-card--text--second .work-card__title {
+        max-width: 300px;
+    }
+
+    .work-card--text--third .work-card__desc {
+        max-width: 256.5px;
+    }
+
+    .work-card--text--first .work-card__title {
+        max-width: 262.5px;
+    }
+
+    .work-card__title {
+        font-size: 21px;
+        max-width: 322.5px;
+    }
+
+    .work-card--plain {
+        padding: 0px 0 0 37.5px;
+    }
+
+    .work-card__info {
+        max-width: 330px;
+        font-size: 12px;
+    }
+
+    .work-card__plus {
+        font-size: 30px;
+    }
+
+    .work-card__bottom-info {
+        max-width: 287.25px;
+        font-size: 12px;
+    }
+
+    .work-card--cta {
+        padding-left: 37.5px;
+    }
+
+    .work-card__btn {
+        gap: 12.75px;
+        border-radius: 750px;
+        padding: 14.25px 17.25px 14.25px 30px;
+        font-size: 12px;
+    }
+
+    .stats {
+        min-height: 900px;
+        padding-bottom: 105px;
+    }
+
+    .stats::after {
+        width: 1440px;
+        height: 1510.5px;
+    }
+
+    .stats__num {
+        font-size: 11.25px;
+    }
+
+    .stats__line {
+        margin-left: 20.25px;
+        margin-right: 8.25px;
+    }
+
+    .stats__slider {
+        margin-top: 11.25px;
+    }
+
+    .stats__card-info {
+        gap: 18.75px;
+        margin-top: 22.5px;
+    }
+
+    .stats__card-value {
+        font-size: 26.25px;
+    }
+
+    .stats__card-label {
+        font-size: 13.5px;
+    }
+
+    .stats__bottom {
+        padding-top: 45px;
+    }
+
+    .stats__nav {
+        gap: 5.25px;
+    }
+
+    .stats__nav-btn,
+    .production__nav-btn,
+    .turnkey__nav-btn,
+    .transition__nav-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .stats__nav-icon {
+        width: 9px;
+        height: 9px;
+    }
+
+    .stats__footer {
+        gap: 30px;
+        margin-top: 33px;
+    }
+
+    .stats__caption {
+        font-size: 11.25px;
+    }
+
+    .stats__text {
+        max-width: 496.5px;
+        font-size: 33.75px;
+    }
+
+    .transport {
+        min-height: 810px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .transport__left {
+        max-width: 390px;
+        padding-top: 111px;
+        padding-bottom: 120px;
+    }
+
+    .transport__title {
+        font-size: 33.75px;
+    }
+
+    .transport__decor {
+        margin: 26.25px auto 16.5px;
+    }
+
+    .transport__text {
+        max-width: 282px;
+        font-size: 12px;
+    }
+
+    .transport__arrow {
+        width: 300px;
+        padding-top: 111px;
+        padding-bottom: 111px;
+    }
+
+    .transport__arrow::before {
+        width: 6px;
+        height: 6px;
+        margin-right: -3px;
+    }
+
+    .transport__cards {
+        gap: 18.75px;
+        width: 405px;
+        padding-top: 111px;
+        padding-bottom: 111px;
+    }
+
+    .transport-card {
+        min-height: 517.5px;
+        padding: 30px 22.5px 30px 30px;
+        border-radius: 10.5px;
+        backdrop-filter: blur(12.75px);
+        -webkit-backdrop-filter: blur(12.75px);
+    }
+
+    .transport-card__top {
+        gap: 32.25px;
+    }
+
+    .transport-card__img {
+        width: 234px;
+        border-radius: 6px;
+    }
+
+    .transport-card__specs {
+        gap: 15px;
+    }
+
+    .transport-card__spec {
+        gap: 6px;
+    }
+
+    .transport-card__line {
+        width: 65.25px;
+    }
+
+    .transport-card__spec-label {
+        font-size: 9px;
+    }
+
+    .transport-card__spec-value {
+        font-size: 12px;
+    }
+
+    .transport-card__title {
+        max-width: 240px;
+        font-size: 18.75px;
+    }
+
+    .transport-card__footer {
+        gap: 22.5px;
+        margin-top: 15px;
+    }
+
+    .transport-card__text {
+        max-width: 270px;
+        font-size: 12px;
+    }
+
+    .transport-card__btn {
+        padding: 10.5px 21px;
+        border-radius: 26.25px;
+        font-size: 9.75px;
+    }
+
+    .production {
+        padding-top: 127.5px;
+        padding-bottom: 172.5px;
+    }
+
+    .production::before {
+        top: -150px;
+        width: 567.75px;
+        height: 807.75px;
+    }
+
+    .production__head {
+        gap: 30px;
+    }
+
+    .production__title {
+        font-size: 33.75px;
+    }
+
+    .production__slider {
+        margin-top: 30px;
+    }
+
+    .production-card {
+        width: 369px;
+    }
+
+    .production-card__plus {
+        top: 15.75px;
+        right: 12px;
+        width: 29.25px;
+        height: 29.25px;
+        padding-bottom: 3px;
+        font-size: 20.25px;
+    }
+
+    .production-card__bottom {
+        gap: 15px;
+        padding: 16.5px 16.5px 15px 22.5px;
+    }
+
+    .production-card__info {
+        gap: 6px;
+    }
+
+    .production-card__weight {
+        font-size: 10.5px;
+    }
+
+    .production-card__name {
+        font-size: 13.5px;
+    }
+
+    .production-card__link {
+        font-size: 11.25px;
+        text-underline-offset: 2.25px;
+    }
+
+    .turnkey {
+        padding-bottom: 150px;
+    }
+
+    .turnkey::before {
+        top: -525px;
+        height: 1510.5px;
+        background: url('../assets/img/work-blur.svg') no-repeat right -135px center / 1257px 1510.5px;
+    }
+
+    .turnkey__head {
+        gap: 30px;
+    }
+
+    .turnkey__title {
+        max-width: 303.75px;
+        font-size: 33.75px;
+    }
+
+    .turnkey__label {
+        max-width: 143.25px;
+        margin-bottom: 13.5px;
+        font-size: 12px;
+    }
+
+    .turnkey__slider {
+        margin-top: 48.75px;
+    }
+
+    .turnkey-card {
+        border-radius: 7.5px;
+        width: calc((100vw - 84px - 27px) / 3);
+        height: 585px;
+        padding: 27.75px 26.25px;
+    }
+
+    .turnkey-card::before {
+        height: 180px;
+    }
+
+    .turnkey-card::after {
+        height: 255px;
+    }
+
+    .turnkey-card__top {
+        padding: 0 14.25px;
+    }
+
+    .turnkey-card__col {
+        padding-top: 10.5px;
+        padding-bottom: 10.5px;
+    }
+
+    .turnkey-card__col--left {
+        gap: 11.25px;
+    }
+
+    .turnkey-card__col--right {
+        padding-left: 14.25px;
+    }
+
+    .turnkey-card__count {
+        font-size: 53.25px;
+    }
+
+    .turnkey-card__count-label {
+        font-size: 11.25px;
+    }
+
+    .turnkey-card__meta {
+        gap: 7.5px;
+    }
+
+    .turnkey-card__num {
+        font-size: 11.25px;
+    }
+
+    .turnkey-card__btn {
+        top: 14.25px;
+        gap: 24px;
+        padding: 3.75px 3.75px 3.75px 24.75px;
+        border-radius: 67.5px;
+        font-size: 10.5px;
+    }
+
+    .turnkey-card__btn-icon {
+        width: 33px;
+        height: 33px;
+    }
+
+    .turnkey-card__btn-icon img {
+        width: 6px;
+        height: 6px;
+    }
+
+    .turnkey-card__location {
+        margin-bottom: 8.25px;
+        font-size: 12px;
+    }
+
+    .turnkey-card__title {
+        margin-bottom: 10.5px;
+        font-size: 30px;
+    }
+
+    .turnkey-card__desc {
+        font-size: 13.5px;
+    }
+
+    .comfort {
+        padding-bottom: 172.5px;
+    }
+
+    .comfort::before {
+        inset: 0 0 -80px;
+    }
+
+    .comfort__watermark {
+        width: 1065px;
+    }
+
+    .comfort__head {
+        gap: 30px;
+    }
+
+    .comfort__title {
+        max-width: 348.75px;
+        font-size: 33.75px;
+    }
+
+    .comfort__logo {
+        width: 109.5px;
+        margin-bottom: 9px;
+    }
+
+    .comfort__line {
+        width: 180px;
+        margin-bottom: 6.75px;
+    }
+
+    .comfort__text {
+        max-width: 180px;
+        font-size: 12px;
+    }
+
+    .comfort__marquee {
+        margin-top: 75px;
+    }
+
+    .comfort__marquee-track {
+        gap: 18.75px;
+    }
+
+    .comfort__marquee-group {
+        gap: 18.75px;
+    }
+
+    @keyframes comfortMarquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(calc(-50% - 9.375px));
+        }
+    }
+
+    .comfort-card {
+        width: 396px;
+        padding: 36.75px 36.75px 33.75px 33.75px;
+        border-radius: 12px;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+    }
+
+    .comfort-card__title {
+        margin-bottom: 11.25px;
+        font-size: 18.75px;
+    }
+
+    .comfort-card__text {
+        max-width: 317.25px;
+        font-size: 12px;
+    }
+
+    .transition {
+        padding-bottom: 142.5px;
+    }
+
+    .transition__head {
+        gap: 30px;
+    }
+
+    .transition__title {
+        max-width: 423.75px;
+        font-size: 33.75px;
+    }
+
+    .transition__slider {
+        margin-top: 30px;
+    }
+
+    .transition-card {
+        width: 368.25px;
+    }
+
+    .transition-card__img {
+        height: 474px;
+    }
+
+    .transition-card__btn {
+        bottom: 25.5px;
+        left: 36px;
+        gap: 22.5px;
+        padding: 17.25px 17.25px 17.25px 47.25px;
+        border-radius: 749.25px;
+        font-size: 12px;
+        transform: translateY(7.5px);
+    }
+
+    .transition-card__btn img {
+        width: 9px;
+        height: 9px;
+    }
+
+    .transition-card__bottom {
+        gap: 15px;
+        margin-top: 39px;
+    }
+
+    .transition-card__name {
+        font-size: 18.75px;
+    }
+
+    .transition-card__text {
+        font-size: 15px;
+    }
+
+    .geography {
+        min-height: 810px;
+        padding-bottom: 127.5px;
+    }
+
+    .geography::before {
+        top: -150px;
+        width: 1301.25px;
+        height: 958.5px;
+    }
+
+    .geography__title {
+        max-width: 502.5px;
+        font-size: 41.25px;
+        margin-bottom: 37.5px;
+    }
+
+    .geography__text {
+        max-width: 247.5px;
+        font-size: 12px;
+        margin-bottom: 36px;
+    }
+
+    .geography__btn {
+        min-width: 225px;
+    }
+
+    .geography__marquee {
+        padding-top: 120px;
+    }
+
+    .geography__marquee-track {
+        gap: 135px;
+    }
+
+    .geography__marquee-group {
+        gap: 135px;
+    }
+
+    @keyframes geographyMarquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(calc(-50% - 33.75px));
+        }
+    }
+
+    .geography-stat__value {
+        font-size: 75px;
+    }
+
+    .geography-stat__label {
+        margin-top: 18.75px;
+        font-size: 13.5px;
+    }
+
+    .cta {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cta__inner {
+        border-radius: 11.25px;
+        padding: 45px 42px 48.75px;
+    }
+
+    .cta__glass {
+        width: 337.5px;
+        backdrop-filter: blur(10.5px);
+        -webkit-backdrop-filter: blur(10.5px);
+    }
+
+    .cta__top {
+        gap: 30px;
+        margin-bottom: 337.5px;
+    }
+
+    .cta__logo {
+        width: 109.5px;
+    }
+
+    .cta__label {
+        font-size: 12px;
+    }
+
+    .cta__middle {
+        gap: 4.5px;
+        margin-bottom: 112.5px;
+    }
+
+    .cta__middle-row {
+        gap: 30px;
+    }
+
+    .cta__note {
+        font-size: 12px;
+    }
+
+    .cta__desc {
+        max-width: 227.25px;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+
+    .cta__line {
+        margin-left: -42px;
+        margin-right: 10.5px;
+    }
+
+    .cta__line::after {
+        width: 47.25px;
+        height: 4.5px;
+    }
+
+    .cta__title {
+        max-width: 580.5px;
+        margin-bottom: 23.25px;
+        font-size: 52.5px;
+    }
+
+    .cta__btn {
+        min-width: 174px;
+    }
+
+    .footer {
+        padding: 37.5px 26.25px 11.25px;
+    }
+
+    .footer__wrapper {
+        gap: 30px;
+    }
+
+    .footer__content {
+        border-radius: 18px;
+        padding: 45px 45.75px 0;
+        gap: 39px;
+    }
+
+    .footer__nav {
+        gap: 30px;
+    }
+
+    .footer__nav-group {
+        gap: 23.25px;
+    }
+
+    .footer__nav-title {
+        font-size: 15px;
+    }
+
+    .footer__nav-link {
+        font-size: 11.25px;
+        line-height: 39px;
+    }
+
+    .footer__bottom {
+        gap: 30px;
+        min-height: 135px;
+    }
+
+    .footer__scroll-top {
+        width: 45.75px;
+        height: 45.75px;
+        border-radius: 750px;
+    }
+
+    .footer__email-info {
+        gap: 9px;
+    }
+
+    .footer__email-label {
+        gap: 4.5px;
+        font-size: 12px;
+    }
+
+    .footer__email {
+        font-size: 16.5px;
+    }
+
+    .footer__legal {
+        gap: 30px;
+        padding: 30px 0;
+        font-size: 11.25px;
+    }
+
+    .nav-menu__inner {
+        padding: 30px 42px 92.25px 45px;
+    }
+
+    .nav-menu__logo img {
+        width: 75px;
+    }
+
+    .nav-menu__close {
+        padding: 6px;
+    }
+
+    .nav-menu__nav {
+        margin-top: 93.75px;
+        gap: 27px;
+    }
+
+    .nav-menu__num {
+        font-size: 10.5px;
+    }
+
+    .nav-menu__item:hover .nav-menu__item-arrow {
+        width: 16.5px;
+        margin-right: 31.5px;
+    }
+
+    .nav-menu__item-text {
+        font-size: 56.25px;
+    }
+
+    .nav-menu__lang {
+        gap: 13.5px;
+    }
+
+    .nav-menu__lang-sep {
+        height: 18px;
+    }
+
+    .nav-menu__lang-btn {
+        font-size: 21px;
+    }
+
+    .modal {
+        border-radius: 3.75px;
+        max-width: 633.75px;
+        padding: 75px 60px 75px 60px;
+        transform: translateY(15px);
+        min-height: 399px;
+    }
+
+    .modal__close {
+        top: 24.75px;
+        right: 24.75px;
+    }
+
+    .modal__title {
+        font-size: 41.25px;
+        max-width: 348.75px;
+        margin-bottom: 22.5px;
+    }
+
+    .modal__form {
+        max-width: 381px;
+        gap: 7.5px;
+    }
+
+    .modal__row {
+        gap: 7.5px;
+    }
+
+    .modal__input {
+        height: 41.25px;
+        border-radius: 75px;
+        padding: 0px 22.5px;
+        font-size: 12px;
+    }
+
+    .modal__check {
+        gap: 6.75px;
+        margin-top: 3.75px;
+    }
+
+    .modal__check-box {
+        width: 12px;
+        height: 12px;
+        border-radius: 1.5px;
+    }
+
+    .modal__check-box::after {
+        width: 2.25px;
+        height: 4.5px;
+        border-width: 0 1.125px 1.125px 0;
+    }
+
+    .modal__check-input:focus-visible + .modal__check-box {
+        outline: 1.5px solid rgba(0, 0, 0, 0.4);
+        outline-offset: 1.5px;
+    }
+
+    .modal__check-text {
+        font-size: 10.5px;
+    }
+
+    .modal__btn {
+        margin-top: 7.5px;
+        gap: 34.5px;
+        padding: 6px 6.75px 6px 22.5px;
+        border-radius: 750px;
+        font-size: 12px;
+    }
+
+    .modal__btn svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .modal__body.hiding {
+        transform: translateY(-6px);
+    }
+
+    .modal__success {
+        padding: 30px;
+        transform: translateY(9px);
+    }
+
+    .modal__success-text {
+        margin-top: 22.5px;
+        max-width: 397.5px;
+        font-size: 33.75px;
+    }
+
+    /* images sized by their own file need explicit widths at this scale */
+    .stats__card:nth-child(1) .stats__card-img,
+    .stats__card:nth-child(2) .stats__card-img {
+        width: 318.75px;
+    }
+
+    .stats__card:nth-child(3) .stats__card-img,
+    .stats__card:nth-child(6) .stats__card-img {
+        width: 387.75px;
+    }
+
+    .stats__card:nth-child(4) .stats__card-img {
+        width: 244.5px;
+    }
+
+    .stats__card:nth-child(5) .stats__card-img {
+        width: 399px;
+    }
+
+    .transport__decor {
+        width: 314.25px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .header__tagline {
+        display: none;
+    }
+
+    .header__right {
+        gap: 30px;
+    }
+
+    .header__menu {
+        gap: 30px;
+    }
+
+    .solutions__row {
+        gap: 30px;
+    }
+
+    .about__container {
+        gap: 125px;
+        padding-left: 112.5px;
+    }
+
+    /* work */
+    .work-card {
+        min-height: 270px;
+    }
+
+    .transport {
+        min-height: 810px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .transport__arrow {
+        width: 200px;
+    }
+
+    /* two cards per view instead of three: container padding (42 × 2)
+       plus a single 13.5px gap */
+    .turnkey-card {
+        width: calc((100vw - 84px - 13.5px) / 2);
+    }
+
+    .geography::before {
+        width: 1000px;
+        height: 738px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .header__nav, .header__actions {
+        display: none;
+    }
+
+    .hero__bottom {
+        flex-direction: column;
+    }
+
+    .hero__text {
+        align-self: flex-start;
+    }
+
+    /* one column: the building first, the stats stacked under it */
+    .solutions__row {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .solutions__media {
+        order: -1;
+    }
+
+    .solutions__image {
+        width: 100%;
+        max-width: 471px;
+    }
+
+    .solutions__stats {
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .solutions__stat {
+        align-items: center;
+    }
+
+    /* about */
+    .about {
+        flex-direction: column;
+    }
+
+    .about__container {
+        padding-left: 42px;
+        gap: 60px;
+    }
+    
+    .about__text {
+        font-size: 32px;
+    }
+
+    /* work */
+    .work__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .work-card--plain {
+        padding-top: 25px;
+    }
+
+    .work-card:not(:last-child) {
+        border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .work-card--bottom-text {
+        padding: 25px;
+    }
+
+    .work-card:last-child {
+        min-height: auto;
+    }
+
+    .work-card--cta {
+        padding-top: 25px;
+        padding-left: 0px;
+    }
+
+    /* what-we-do */
+    .what-we-do {
+        contain: layout paint;
+    }
+
+      .what-we-do__label-panel {
+    width: 100%;
+    padding-left: 36px;
+    padding-right: 36px;
+    overflow: hidden;
+    will-change: height;
+  }
+
+
+  .what-we-do__title {
+    margin-bottom: 50px;
+  }
+
+    /* transport: one centred column, no connector line */
+    .transport {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .transport__inner {
+        flex-direction: column;
+    }
+
+    .transport__left {
+        position: static;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    .transport__arrow, .transport-card__specs {
+        display: none;
+    }
+
+    .transport__cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding-top: 60px;
+    }
+
+    /* card content stacks so nothing runs past the narrower card */
+    .transport-card__top {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .transport-card__img {
+        width: 100%;
+    }
+
+    .transport__title {
+        max-width: 500px;
+    }
+
+    .transport-card {
+        gap: 40px;
+    }
+
+    .transport-card__line {
+        margin-left: 0;
+    }
+
+    .transport-card__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    /* geography */
+    .geography::before {
+        width: 650px;
+        top: -50px;
+    }
+
+      /* menu */
+    .nav-menu__nav {
+        margin-top: 50px;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    
+    .nav-menu__bottom {
+        margin-left: 0;
+    }
+
+      /* modal */
+  .modal-overlay {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 769px) {
+    .stats__footer {
+        flex-direction: column;
+    }
+
+     /* work */
+    .work__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-card {
+        min-height: 350px;
+    }
+
+    .work-card--plain, .work-card--bottom-text {
+        display: flex;
+        align-items: center;
+        border: none !important;
+        padding: 0;
+    }
+
+    .transport__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cta__note {
+        display: none;
+    }
+
+    .about__container {
+        flex-direction: column;
+    }
+
+    /* one card per view: the full container width (42px padding each side) */
+    .turnkey-card {
+        width: calc(100vw - 84px);
+    }
+
+    /* production: arrows move under the slider, centred.
+       display: contents dissolves the header wrapper so the title, the slider
+       and the arrows become siblings of the section and can be reordered. */
+    .production {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .production__head {
+        display: contents;
+    }
+
+    .production__title {
+        order: 1;
+        /* the .container padding lived on the wrapper that just dissolved */
+        padding-left: 42px;
+        padding-right: 42px;
+        text-align: center;
+    }
+
+    .production__slider {
+        order: 2;
+    }
+
+    .production__nav {
+        order: 3;
+        justify-content: center;
+        margin-top: 48px;
+    }
+
+    .comfort__aside {
+        display: none;
+    }
+
+    /* geography: the globe drops below the content instead of sitting behind
+       it — the section reserves the room for it with its bottom padding */
+    .geography {
+        min-height: auto;
+        padding-bottom: 420px;
+        text-align: center;
+    }
+
+    .geography::before {
+        top: auto;
+        bottom: 0;
+        left: -34%;
+        right: 0;
+        width: auto;
+        height: 660px;
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    .geography__title,
+    .geography__text {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .geography__btn {
+        align-self: center;
+    }
+
+    .geography__marquee {
+        padding-top: 60px;
+        text-align: left;
+    }
+
+    /* footer ------------------------------------------------------------ */
+    .footer__content {
+      padding: 30px;
+    }
+
+    /* .footer__nav-col keeps display: contents, so the four groups land in the
+       grid in document order: Навигация | Лифты / Эскалаторы | Контакты */
+    .footer__nav {
+      display: grid;
+      /* 65 / 35 — fr shares out what is left after the gap, so the ratio holds */
+      grid-template-columns: 62fr 38fr;
+      gap: 44px 20px;
+      align-items: start;
+    }
+
+    .footer__nav-group {
+      flex-basis: auto;
+    }
+
+    .footer__nav-group--right {
+      text-align: left;
+    }
+
+    /* scroll-to-top sits above the e-mail, both pinned right */
+    .footer__bottom {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 30px;
+      min-height: 0;
+      margin-top: 20px;
+    }
+
+    .footer__email-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer__email-label-wrapper {
+      gap: 8px;
+    }
+
+    /* two rows: dev logo + privacy, then the copyright line */
+    .footer__legal {
+      grid-template-columns: auto auto;
+      grid-template-areas:
+        "dev privacy"
+        "rights year";
+      align-items: center;
+      gap: 55px 20px;
+      margin-top: 30px;
+      padding: 0 0 30px;
+    }
+
+    .footer__dev {
+      display: block;
+      grid-area: dev;
+    }
+
+    .footer__legal-link {
+      grid-area: privacy;
+      justify-self: end;
+      max-width: 150px;
+      text-align: right;
+    }
+
+    .footer__legal > span:nth-of-type(1) {
+      grid-area: rights;
+    }
+
+    .footer__legal > span:nth-of-type(2) {
+      grid-area: year;
+      text-align: right;
+    }
+}
+
+@media (max-width: 570px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .stats__nav-btn, .production__nav-btn, .turnkey__nav-btn, .transition__nav-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .stats__nav-icon {
+        width: 12px;
+        height: 12px;
+    }
+
+    .stats__nav {
+        gap: 7px;
+    }
+
+    /* header */
+    .header__container {
+        padding-top: 20px;
+    } 
+
+    .header__burger {
+        width: 39px;
+        height: 39px;
+    }
+
+    .header__burger img {
+        width: auto;
+    }
+
+    .header__logo img {
+        width: 140px;
+    }
+
+    /* hero */
+    .hero__container {
+        padding-bottom: 42px;
+    }
+
+    .hero__title {
+        font-size: 33px;
+        line-height: 112%;
+        max-width: 320px;
+    }
+
+    .hero__pagination {
+        display: none;
+    }
+
+    .hero__text br {
+        display: none;
+    }
+
+    .hero__text {
+        font-size: 18px;
+        line-height: 144%;
+        max-width: 310px;
+    }
+
+    .hero__bottom {
+        gap: 45px;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 14px;
+    }
+
+    .hero__actions .header__btn {
+        width: 100%;
+        min-height: 61px;
+        font-size: 16px;
+    }
+
+    .hero__slides::after {
+        background: linear-gradient(to top, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .5) 30%, rgba(0, 0, 0, 0) 60%);
+    }
+
+    /* .solutions */
+    .solutions {
+        padding-top: 50px;
+    }
+
+    .solutions__marquee-group, .solutions__marquee-track {
+        gap: 35px;
+    }
+
+    .solutions__container {
+        padding-top: 140px;
+    }
+
+    .solutions__title {
+        font-size: 30px;
+        line-height: 117%;
+        max-width: 300px;
+    }
+
+    .solutions__row {
+        margin-top: 60px;
+        gap: 25px;
+    }
+
+    .solutions__watermark {
+        top: 233px;
+        width: 86%;
+    }
+
+    .solutions__image {
+        width: 87%;
+    }
+
+    .solutions__text {
+        margin-top: 30px;
+        font-size: 15px;
+        line-height: 133%;
+        max-width: 302px;
+        margin-bottom: 45px;
+    }
+
+    .solutions__stat-value {
+        font-size: 30px;
+        line-height: 107%;
+    }
+
+    .solutions__stat-label {
+        font-size: 18px;
+        line-height: 178%;
+    }
+
+    .solutions::after {
+        bottom: 0;
+        top: auto;
+        right: -200px;
+    }
+
+    .solutions__stat, .solutions__stats {
+        align-items: start;
+        width: 100%;
+    }
+
+    .solutions__stat {
+        padding-left: 19px;
+        padding-right: 19px;
+        gap: 0;
+    }
+
+    /* .about */
+    .about {
+        padding-top: 170px;
+        padding-bottom: 130px;
+    }
+
+    .about__note {
+        font-size: 14px;
+        line-height: 108%;
+    }
+
+    .about__left {
+        gap: 55px;
+    }
+
+    .about__item:not(:last-child) {
+        padding-bottom: 9px;
+    }
+
+    .about__item {
+        font-size: 15px;
+        line-height: 133%;
+        width: 226px;
+    }
+
+    .about__list {
+        gap: 9px;
+    }
+
+    .about__container {
+        padding-left: 40px;
+        padding-right: 40px;
+        gap: 60px;
+    }
+
+    .about__text {
+        font-size: 21px;
+        line-height: 109%;
+    }
+
+    .about__right {
+        gap: 30px;
+    }
+
+    /* work */
+    .work {
+        padding-bottom: 150px;
+    }
+
+    .work__title {
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        text-align: center;
+        max-width: 142px;
+    }
+
+    .work::before {
+        background: url(../assets/img/work-blur-mob.svg) no-repeat center / contain;
+        width: 100%;
+        height: 1000%;
+    }
+
+    .work__header {
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .work-card {
+        min-height: 221px;
+    }
+
+    .work-card--img {
+        padding: 12px;
+        border: none !important;
+    }
+
+    .work-card__num {
+        font-size: 13px;
+    }
+
+    .work-card--text {
+        font-size: 13px;
+        line-height: 177%;
+        padding: 12px;
+        padding-left: 16px;
+    }
+
+    .work-card--text--first, .work-card--plus {
+        border-top: 0 !important;
+    }
+
+    .work-card__desc, .work-card__info, .work-card__bottom-info {
+        line-height: 131%;
+    }
+
+    .work-card__title {
+        font-size: 21px;
+        line-height: 100%;
+        max-width: 276px;
+    }
+
+    .work-card--text--first .work-card__desc {
+        max-width: 238px;
+    }
+
+    .work-card__info {
+        max-width: 280px;
+    }
+
+    .work-card--text--first .work-card__title {
+        max-width: 243px;
+    }
+
+    .work-card--text--second .work-card__desc {
+        max-width: 242px;
+    }
+
+    .work-card--plain, .work-card--bottom-text {
+        padding: 100px 0;
+    }
+
+    .work-card__bottom-info {
+        max-width: 216px;
+    }
+
+    .work-card--img svg {
+        display: none;
+    }
+
+    .work-card--text--third .work-card__desc {
+        max-width: 231px;
+    }
+
+    .work-card--cta {
+        padding-top: 50px;
+    }
+
+    .work-card__btn {
+        gap: 0px;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 22px 20px 36px;
+        font-size: 14px;
+    }
+
+    /* .stats */
+    .stats {
+        padding-bottom: 225px;
+    }
+
+    .stats__num {
+        font-size: 15px;
+        line-height: 120%;
+    }
+
+    .stats__line {
+        margin-left: 11px;
+        margin-right: 11px;
+    }
+
+    /* one stats card per screen; the nth-child selectors in the 1919 block set
+       the image widths, so this needs to match their specificity */
+    .stats__card {
+        width: calc(100vw - 40px);
+    }
+
+    .stats__card:nth-child(n) .stats__card-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .stats__card-info {
+        margin-top: 35px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .stats__card-value {
+        font-size: 31px;
+        line-height: 113%;
+    }
+
+    .stats__card-label {
+        font-size: 14px;
+        line-height: 171%;
+    }
+
+    .stats__nav {
+        justify-content: start;
+    }
+
+    .stats__bottom {
+        padding-top: 60px;
+    }
+
+    .stats__footer {
+        margin-top: 77px;
+        gap: 20px;
+    }
+
+    .stats__caption {
+        font-size: 15px;
+        line-height: 120%;
+    }
+
+    .stats__text {
+        font-size: 23px;
+        line-height: 100%;
+        max-width: 280px;
+    }
+
+    /* .transport */
+    .transport {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-image: url(../assets/img/transport-bg-mob.webp);
+    }
+
+    .transport__left {
+        padding-top: 80px;
+    }
+
+    .transport__title {
+        font-size: 30px;
+        line-height: 117%;
+        max-width: 300px;
+    }
+
+    .transport__decor {
+        height: auto;
+        width: 91%;
+        margin: 43px auto 60px;
+    }
+
+    .transport__text {
+        font-size: 14px;
+        line-height: 143%;
+        max-width: 263px;
+    }
+
+    .transport__cards {
+        padding-top: 105px;
+        padding-bottom: 35px;
+    }
+
+    .transport-card {
+        padding: 25px;
+        gap: 23px;
+        min-height: 400px;
+    }
+
+    .transport-card__img {
+        width: 77%;
+    }
+
+    .transport-card__text {
+        display: none;
+    }
+
+    .transport-card__footer {
+        margin-top: 13px;
+    }
+
+    .transport-card__btn {
+        font-size: 12px;
+    }
+
+    /* .production */
+    .production {
+        padding-top: 120px;
+        padding-bottom: 130px;
+    }
+
+    .production__title {
+        font-size: 28px;
+        line-height: 117%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* one card per screen: the screen minus both 20px slider offsets */
+    .production-card {
+        width: calc(100vw - 40px);
+    }
+
+    .production__slider {
+        margin-top: 50px;
+    }
+
+    .production-card__plus {
+        top: 20px;
+        right: 12px;
+        width: 39px;
+        height: 39px;
+        padding-bottom: 4px;
+        font-size: 27px;
+    }
+
+    .production-card__bottom {
+        padding: 20px;
+    }
+
+    .production-card__weight {
+        font-size: 13px;
+    }
+
+    .production-card__name {
+        font-size: 17px;
+    }
+
+    .production-card__link {
+        font-size: 13px;
+        text-underline-offset: 3px;
+    }
+
+    .production-card__info {
+        gap: 12px;
+    }
+
+    .production__nav {
+        justify-content: center;
+    }
+
+    /* turnkey: no slider here — the cards stack into a sticky deck */
+    .turnkey__head {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .turnkey__title {
+        max-width: 300px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 117%;
+    }
+
+    .turnkey__aside {
+        display: none;
+    }
+
+    .turnkey__slider {
+        overflow: visible;
+        margin-top: 0;
+        /* the padding lives here: Swiper's own CSS puts .swiper-wrapper on
+           box-sizing: content-box, so padding there widens the page */
+        padding: 0 20px;
+    }
+
+    .turnkey__slider .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .turnkey-card {
+        position: sticky;
+        width: auto;
+        height: auto;
+        min-height: 430px;
+        border-radius: 12px;
+        padding: 17px;
+    }
+
+    /* each card parks a little lower, so the ones below slide over it and the
+       headers of the cards underneath stay visible — the deck effect */
+    .turnkey-card:nth-child(1) { top: 20px; }
+    .turnkey-card:nth-child(2) { top: 70px; }
+    .turnkey-card:nth-child(3) { top: 110px; }
+    .turnkey-card:nth-child(4) { top: 140px; }
+
+    /* transport: the same sticky deck as turnkey — cards keep their own look
+       and slide over each other, leaving the top of the ones below visible */
+    .transport__cards {
+        gap: 10px;
+    }
+
+    .transport-card {
+        background: rgba(0, 0, 0, 0.6);
+        position: sticky;
+    }
+
+    .transport-card:nth-child(1) { top: 20px; }
+    .transport-card:nth-child(2) { top: 60px; }
+    .transport-card:nth-child(3) { top: 100px; }
+    .transport-card:nth-child(4) { top: 140px; }
+
+    .turnkey-card__count {
+        font-size: 35px;
+    }
+
+    .turnkey-card__col--left {
+        gap: 9px;
+    }
+
+    /* no hover on touch: the card button is shown from the start. It sits in
+       the same corner as the number, so the number steps aside. */
+    .turnkey-card__btn {
+        opacity: 1;
+        visibility: visible;
+        font-size: 12px;
+        padding-left: 15px;
+        width: 90%;
+        justify-content: space-between;
+        top: 10px;
+    }
+
+    .turnkey-card__meta {
+        opacity: 0;
+    }
+
+    .turnkey-card__count-label {
+        font-size: 13px;
+    }
+
+    /* shorter label on narrow cards */
+    .turnkey-card__btn-full {
+        display: none;
+    }
+
+    .turnkey-card__btn-short {
+        display: inline;
+    }
+
+    .turnkey-card__btn-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .turnkey-card__btn-icon img {
+        width: 7px;
+        height: 7px;
+    }
+
+    .turnkey-card__col--right {
+        padding-left: 13px;
+    }
+
+    .turnkey-card__col {
+        padding-top: 9.5px;
+        padding-bottom: 9.5px;
+    }
+
+    .turnkey-card__top {
+        padding: 0 10px;
+    }
+
+    .turnkey-card__location {
+        font-size: 13px;
+        line-height: 147%;
+        margin-bottom: 10px;
+    }
+
+    .turnkey-card__title {
+        font-size: 23px;
+        line-height: 152%;
+        margin-bottom: 0px;
+    }
+
+    .turnkey-card__desc {
+        font-size: 14px;
+        line-height: 164%;
+    }
+
+    .turnkey-card::after {
+        background: linear-gradient(to top, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0));
+    }
+
+    /* .comfort */
+    .comfort__title {
+        font-size: 30px;
+        line-height: 117%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .comfort__head {
+        justify-content: center;
+    }
+
+    .comfort__marquee {
+        margin-top: 50px;
+    }
+
+    /* comfort: the marquee stops and becomes a plain one-column grid */
+    .comfort__marquee {
+        overflow: visible;
+        padding: 0 20px;
+    }
+
+    .comfort__marquee-track {
+        display: block;
+        width: auto;
+        animation: none;
+        transform: none;
+    }
+
+    .comfort__marquee-group {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* the second group only exists to make the loop seamless */
+    .comfort__marquee-group[aria-hidden="true"] {
+        display: none;
+    }
+
+    .comfort-card {
+        width: auto;
+        padding: 30px;
+        padding-top: 35px;
+        padding-right: 15px;
+    }
+
+    .comfort-card__title {
+        font-size: 21px;
+        line-height: 119%;
+        margin-bottom: 15px;
+    }
+
+    .comfort-card__text {
+        font-size: 13px;
+        line-height: 164%;
+    }
+
+        /* comfort: the purple glow steps aside here for a warm one, and a second
+       logo shows up behind the cards. Both live on one pseudo-element as
+       backgrounds — an oversized <img> would widen the page, a background
+       never does. */
+    .comfort::before {
+        display: none;
+    }
+
+    .comfort::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        /* two overlapping ellipses cover the whole stack of cards and add up
+           in the middle, so the warm light reads across all four of them */
+        background:
+            url('../assets/icons/comfort-bg-logo.svg') no-repeat center 62% / 760px auto,
+            radial-gradient(115% 42% at 50% 38%, #140E06 0%, rgba(20, 14, 6, 0.55) 45%, rgba(20, 14, 6, 0) 80%),
+            radial-gradient(115% 42% at 50% 78%, #140E06 0%, rgba(20, 14, 6, 0.55) 45%, rgba(20, 14, 6, 0) 80%);
+        pointer-events: none;
+    }
+
+    /* the watermark was capped by max-width: 100%, which shrank the whole
+       script down to the screen width. The purple glow is off here, so the
+       section can clip again and the logo may run past the edges. */
+    .comfort {
+        overflow: hidden;
+    }
+
+    .comfort__watermark {
+        width: 900px;
+        max-width: none;
+    }
+
+    /* transition: title on top, arrows moved under the slider.
+       display: contents dissolves the header wrapper so the three blocks
+       become siblings of the section and can be reordered. */
+    .transition {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transition__head {
+        display: contents;
+    }
+
+    .transition__title {
+        order: 1;
+        max-width: 100%;
+        margin-bottom: 35px;
+        /* the .container padding lived on the wrapper that just dissolved */
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 25px;
+        line-height: 120%;
+    }
+
+    .transition__slider {
+        order: 2;
+        margin-top: 0;
+    }
+
+    .transition__nav {
+        order: 3;
+        justify-content: flex-start;
+        margin-top: 60px;
+        padding-left: 20px;
+    }
+
+    .transition-card {
+        width: 245px;
+    }
+
+    .transition-card__img {
+        height: auto;
+    }
+
+    /* no hover on touch — the button is visible from the start */
+    .transition-card__btn {
+        bottom: 10px;
+        left: 10px;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        padding: 17px 21px 17px 33px;
+        font-size: 14px;
+    }
+
+    .transition-card__bottom {
+        margin-top: 20px;
+        gap: 13px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .transition-card__name br {
+        display: none;
+    }
+
+    .transition-card__text {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    /* .geography */
+    .geography {
+        padding-bottom: 550px;
+    }
+
+    .geography__title {
+        font-size: 25px;
+        line-height: 120%;
+        margin-bottom: 25px;
+        max-width: 310px;
+    }
+
+    .geography__text {
+        font-size: 14px;
+        line-height: 164%;
+        max-width: 310px;
+        margin-bottom: 50px;
+    }
+
+    .geography__btn {
+        min-height: 66px;
+        min-width: 280px;
+        border-radius: 35px;
+        font-size: 15px;
+    }
+
+    .geography__marquee {
+        padding-top: 120px;
+    }
+
+    .geography__marquee-group {
+        gap: 35px;
+    }
+
+    .geography-stat__value {
+        font-size: 55px;
+    }
+
+    .geography-stat {
+        align-items: start;
+    }
+
+    .geography-stat__label {
+        font-size: 14px;
+        line-height: 121%;
+    }
+
+    .geography::before {
+        height: 600px;
+        left: -54%;
+    }
+
+    .geography__marquee-track {
+        gap: 35px;
+    }
+
+    /* cta */
+    .cta {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .cta__inner {
+        padding: 30px 20px;
+    }
+
+    .cta__logo {
+        width: 87px;
+    }
+
+    .cta__label {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .cta__line {
+        display: none;
+    }
+
+    /* cta: title at the top, description and button pinned to the bottom.
+       display: contents dissolves the middle/bottom wrappers so every piece
+       becomes a flex child of .cta__inner and can be reordered. */
+    .cta__inner {
+        display: flex;
+        flex-direction: column;
+        min-height: 865px;
+        padding: 30px 20px 40px;
+    }
+
+    .cta__middle,
+    .cta__middle-row,
+    .cta__bottom {
+        display: contents;
+    }
+
+    .cta__top {
+        order: 1;
+        margin-bottom: 85px;
+    }
+
+    .cta__title {
+        order: 2;
+        max-width: 100%;
+        margin-bottom: 0;
+        font-size: 35px;
+        line-height: 88%;
+    }
+
+    .cta__desc {
+        order: 3;
+        max-width: 263px;
+        font-size: 14px;
+        line-height: 164%;
+        /* auto margin pushes the pair to the floor of the block */
+        margin-top: auto;
+        margin-bottom: 40px;
+    }
+
+    .cta__btn {
+        order: 4;
+        align-self: flex-start;
+        min-height: 66px;
+        min-width: 200px;
+        border-radius: 35px;
+        font-size: 15px;
+    }
+
+    .cta__line {
+        display: none;
+    }
+
+    .cta__glass {
+        height: 1600px;
+        top: 45%;
+    }
+
+    /* footer */
+    .footer {
+        padding: 40px 12px 20px;
+    }
+
+    .footer__content {
+        padding: 36px 20px 27px 20px;
+    }
+
+    .footer__nav-title {
+        font-size: 18px;
+    }
+
+    .footer__nav-group {
+        gap: 20px;
+    }
+
+    .footer__nav-link {
+        font-size: 14px;
+        line-height: 33px;
+    }
+
+    .footer__nav {
+        gap: 20px 44px;
+    }
+
+    .footer__divider {
+        display: none;
+    }
+
+    .footer__bottom {
+        margin-top: 0px;
+    }
+
+    .footer__scroll-top {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer__email-label {
+        font-size: 14px;
+    }
+
+    .footer__email {
+        font-size: 19px;
+    }
+
+    .footer__legal {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .footer__legal-link {
+        font-size: 14px;
+        line-height: 100%;
+        color: #fff;
+    }
+
+    .footer__legal {
+        font-size: 13px;
+        line-height: 100%;
+        color: rgba(229, 229, 229, 0.25);
+    }
+
+    /* menu */
+    .nav-menu__item-text {
+        font-size: 36px;
+    }
+
+    .nav-menu__inner {
+        justify-content: start;
+        padding: 20px
+    }
+
+    .nav-menu__nav {
+        margin: 0px;
+        gap: 20px;
+        margin-top: 70px;
+    }
+
+    .nav-menu__lang-btn {
+        font-size: 21px;
+        padding: 0;
+    }
+
+    .nav-menu__brand {
+        bottom: 40px;
+        top: auto;
+    }
+
+    .nav-menu__close {
+        width: 16px;
+        height: 16px;
+        padding: 0;
+    }
+
+    .nav-menu__item-right {
+        flex-direction: row-reverse;
+        gap: 10px;
+    }
+
+    /* modal */
+    .modal-overlay {
+        padding: 15px;
+    }
+
+    .modal {
+        padding: 85px 30px 77px 30px;
+    }
+
+    .modal__title {
+        font-size: 35px;
+        line-height: 100%;
+        max-width: 270px;
+        margin-bottom: 30px;
+    }
+
+    .modal__row {
+        flex-direction: column;
+    }
+
+    .modal__btn {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 0px;
+        font-size: 14px;
+        padding: 5px 5px 5px 20px;
+    }
+
+    .modal__input {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .modal__btn svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .modal__success-text {
+        font-size: 23px;
+    }
+
+    .modal__check {
+        margin-top: 2.75px;
+        margin-bottom: 12.75px;
+        align-items: start;
+    }
+
+    .modal__check-text {
+        font-size: 13px;
+        max-width: 270px;
+    }
+
+    .br-mobile {
+        display: inline;
+    }
+}
+
