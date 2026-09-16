@@ -17,7 +17,7 @@
 <header class="header">
     <div class="container header__container">
         <div class="header__left">
-            <a class="header__logo" href="/">
+            <a class="header__logo" href="index.html">
                 <img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18">
             </a>
             <span class="header__tagline">вертикальный транспорт любого уровня</span>
@@ -25,17 +25,17 @@
 
         <nav class="header__nav">
             <ul class="header__menu">
-                <li><a class="header__menu-link" href="#hero">Главная</a></li>
-                <li><a class="header__menu-link" href="#lifts">Лифты</a></li>
-                <li><a class="header__menu-link" href="#escalators">Эскалаторы и движущиеся дорожки</a></li>
-                <li><a class="header__menu-link" href="#projects">Проекты</a></li>
-                <li><a class="header__menu-link" href="#contacts">Контакты</a></li>
+                <li><a class="header__menu-link" href="index.html">Главная</a></li>
+                <li><a class="header__menu-link" href="lifts.html">Лифты</a></li>
+                <li><a class="header__menu-link" href="escalators.html">Эскалаторы и дорожки</a></li>
+                <li><a class="header__menu-link" href="about-us.html">О компании</a></li>
+                <li><a class="header__menu-link" href="contact.html">Контакты</a></li>
             </ul>
         </nav>
 
         <div class="header__right">
             <div class="header__actions">
-                <a class="header__action" href="#catalog">
+                <a class="header__action" href="lifts.html">
                     <span>Каталог</span>
                     <img src="assets/icons/header-link-arrow.svg" alt="" width="8" height="8" aria-hidden="true">
                 </a>
@@ -351,7 +351,7 @@
 
             <span class="transport__arrow" aria-hidden="true"></span>
 
-            <div class="transport__cards">
+            <div class="transport__cards" data-deck>
             <article class="transport-card" data-aos="fade-up" data-aos-duration="900">
                 <div class="transport-card__top">
                     <img class="transport-card__img" src="assets/img/transport-card-1.png" alt="Пассажирский лифт" width="312" height="372" loading="lazy">
@@ -379,7 +379,7 @@
 
                     <div class="transport-card__footer">
                         <p class="transport-card__text">Высокопроизводительные решения для жилых комплексов, офисов, гостиниц, торговых центров и бизнес-центров.</p>
-                        <a class="transport-card__btn" href="#catalog">Подробнее</a>
+                        <a class="transport-card__btn" data-popup-open="modal">Подробнее</a>
                     </div>
                 </div>
             </article>
@@ -411,7 +411,7 @@
 
                     <div class="transport-card__footer">
                         <p class="transport-card__text">Высокопроизводительные решения для жилых комплексов, офисов, гостиниц, торговых центров и бизнес-центров.</p>
-                        <a class="transport-card__btn" href="#catalog">Подробнее</a>
+                        <a class="transport-card__btn" data-popup-open="modal">Подробнее</a>
                     </div>
                 </div>
             </article>
@@ -443,7 +443,7 @@
 
                     <div class="transport-card__footer">
                         <p class="transport-card__text">Высокопроизводительные решения для жилых комплексов, офисов, гостиниц, торговых центров и бизнес-центров.</p>
-                        <a class="transport-card__btn" href="#catalog">Подробнее</a>
+                        <a class="transport-card__btn" data-popup-open="modal">Подробнее</a>
                     </div>
                 </div>
             </article>
@@ -475,7 +475,7 @@
 
                     <div class="transport-card__footer">
                         <p class="transport-card__text">Высокопроизводительные решения для жилых комплексов, офисов, гостиниц, торговых центров и бизнес-центров.</p>
-                        <a class="transport-card__btn" href="#catalog">Подробнее</a>
+                        <a class="transport-card__btn" data-popup-open="modal">Подробнее</a>
                     </div>
                 </div>
             </article>
@@ -503,7 +503,7 @@
                     <div class="production-card__media">
                         <img class="production-card__img" src="assets/img/production-card-1.webp" alt="Грузовые лифты" width="492" height="663" loading="lazy">
 
-                        <button class="production-card__plus" type="button" aria-label="Подробнее о категории «Грузовые»">+</button>
+                        <button class="production-card__plus" type="button" aria-label="Подробнее о категории «Грузовые»" data-popup-open="modal">+</button>
                     </div>
 
                     <div class="production-card__bottom">
@@ -512,14 +512,14 @@
                             <span class="production-card__name">Грузовые</span>
                         </div>
 
-                        <a class="production-card__link" href="#catalog">Подробнее</a>
+                        <a class="production-card__link" data-popup-open="modal">Подробнее</a>
                     </div>
                 </div>
                 <div class="swiper-slide production-card">
                     <div class="production-card__media">
                         <img class="production-card__img" src="assets/img/production-card-2.webp" alt="Пассажирские лифты" width="492" height="663" loading="lazy">
 
-                        <button class="production-card__plus" type="button" aria-label="Подробнее о категории «Пассажирские»">+</button>
+                        <button class="production-card__plus" type="button" aria-label="Подробнее о категории «Пассажирские»" data-popup-open="modal">+</button>
                     </div>
 
                     <div class="production-card__bottom">
@@ -528,14 +528,14 @@
                             <span class="production-card__name">Пассажирские</span>
                         </div>
 
-                        <a class="production-card__link" href="#catalog">Подробнее</a>
+                        <a class="production-card__link" data-popup-open="modal">Подробнее</a>
                     </div>
                 </div>
                 <div class="swiper-slide production-card">
                     <div class="production-card__media">
                         <img class="production-card__img" src="assets/img/production-card-3.webp" alt="Коттеджные лифты" width="492" height="663" loading="lazy">
 
-                        <button class="production-card__plus" type="button" aria-label="Подробнее о категории «Коттеджные»">+</button>
+                        <button class="production-card__plus" type="button" aria-label="Подробнее о категории «Коттеджные»" data-popup-open="modal">+</button>
                     </div>
 
                     <div class="production-card__bottom">
@@ -544,14 +544,14 @@
                             <span class="production-card__name">Коттеджные</span>
                         </div>
 
-                        <a class="production-card__link" href="#catalog">Подробнее</a>
+                        <a class="production-card__link" data-popup-open="modal">Подробнее</a>
                     </div>
                 </div>
                 <div class="swiper-slide production-card">
                     <div class="production-card__media">
                         <img class="production-card__img" src="assets/img/production-card-4.webp" alt="Панорамные лифты" width="492" height="663" loading="lazy">
 
-                        <button class="production-card__plus" type="button" aria-label="Подробнее о категории «Панорамные»">+</button>
+                        <button class="production-card__plus" type="button" aria-label="Подробнее о категории «Панорамные»" data-popup-open="modal">+</button>
                     </div>
 
                     <div class="production-card__bottom">
@@ -560,7 +560,7 @@
                             <span class="production-card__name">Панорамные</span>
                         </div>
 
-                        <a class="production-card__link" href="#catalog">Подробнее</a>
+                        <a class="production-card__link" data-popup-open="modal">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -586,7 +586,7 @@
         </div>
 
         <div class="swiper turnkey__slider">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" data-deck>
                 <div class="swiper-slide turnkey-card">
                     <img class="turnkey-card__img" src="assets/img/turnkey-card-1.webp" alt="МТЦ «EL RIO»" width="583" height="781" loading="lazy">
 
@@ -602,7 +602,7 @@
                                 <img class="turnkey-card__progress" src="assets/icons/turnkey.svg" alt="" width="52" height="12">
                             </div>
 
-                            <a class="turnkey-card__btn" href="#projects">
+                            <a class="turnkey-card__btn" data-popup-open="modal">
                                 <span class="turnkey-card__btn-full">Узнать подробнее</span>
                                 <span class="turnkey-card__btn-short">Подробнее</span>
                                 <span class="turnkey-card__btn-icon">
@@ -633,7 +633,7 @@
                                 <img class="turnkey-card__progress" src="assets/icons/turnkey.svg" alt="" width="52" height="12">
                             </div>
 
-                            <a class="turnkey-card__btn" href="#projects">
+                            <a class="turnkey-card__btn" data-popup-open="modal">
                                 <span class="turnkey-card__btn-full">Узнать подробнее</span>
                                 <span class="turnkey-card__btn-short">Подробнее</span>
                                 <span class="turnkey-card__btn-icon">
@@ -664,7 +664,7 @@
                                 <img class="turnkey-card__progress" src="assets/icons/turnkey.svg" alt="" width="52" height="12">
                             </div>
 
-                            <a class="turnkey-card__btn" href="#projects">
+                            <a class="turnkey-card__btn" data-popup-open="modal">
                                 <span class="turnkey-card__btn-full">Узнать подробнее</span>
                                 <span class="turnkey-card__btn-short">Подробнее</span>
                                 <span class="turnkey-card__btn-icon">
@@ -760,7 +760,7 @@
                     <div class="transition-card__media">
                         <img class="transition-card__img" src="assets/img/transition-card-1.webp" alt="" width="491" height="632" loading="lazy">
 
-                        <a class="transition-card__btn" href="#catalog">
+                        <a class="transition-card__btn" data-popup-open="modal">
                             Смотреть
                             <img src="assets/icons/transition-btn-arrow.svg" alt="" width="12" height="12">
                         </a>
@@ -775,7 +775,7 @@
                     <div class="transition-card__media">
                         <img class="transition-card__img" src="assets/img/transition-card-2.webp" alt="" width="491" height="632" loading="lazy">
 
-                        <a class="transition-card__btn" href="#catalog">
+                        <a class="transition-card__btn" data-popup-open="modal">
                             Смотреть
                             <img src="assets/icons/transition-btn-arrow.svg" alt="" width="12" height="12">
                         </a>
@@ -790,7 +790,7 @@
                     <div class="transition-card__media">
                         <img class="transition-card__img" src="assets/img/transition-card-3.webp" alt="" width="491" height="632" loading="lazy">
 
-                        <a class="transition-card__btn" href="#catalog">
+                        <a class="transition-card__btn" data-popup-open="modal">
                             Смотреть
                             <img src="assets/icons/transition-btn-arrow.svg" alt="" width="12" height="12">
                         </a>
@@ -805,7 +805,7 @@
                     <div class="transition-card__media">
                         <img class="transition-card__img" src="assets/img/transition-card-4.webp" alt="" width="491" height="632" loading="lazy">
 
-                        <a class="transition-card__btn" href="#catalog">
+                        <a class="transition-card__btn" data-popup-open="modal">
                             Смотреть
                             <img src="assets/icons/transition-btn-arrow.svg" alt="" width="12" height="12">
                         </a>
@@ -826,7 +826,7 @@
 
             <p class="geography__text">Мы производим, комплектуем и поставляем оборудование для проектов в разных регионах страны. Каждая партия подготавливается к транспортировке и страхуется на всём маршруте доставки.</p>
 
-            <a class="geography__btn btn--light header__btn" href="#projects">Посмотреть карту проектов</a>
+            <a class="geography__btn btn--light header__btn" data-popup-open="modal">Посмотреть карту проектов</a>
         </div>
 
         <div class="geography__marquee">
@@ -901,7 +901,7 @@
             <div class="cta__bottom">
                 <h2 class="cta__title">Начните проект вместе с LIFT MASTER</h2>
 
-                <button class="header__btn btn--light cta__btn" href="#form" data-popup-open="modal">Отправить заявку</button>
+                <button class="header__btn btn--light cta__btn" data-popup-open="modal">Отправить заявку</button>
             </div>
         </div>
     </section>
@@ -916,10 +916,10 @@
                         <span class="footer__nav-title">Навигация</span>
 
                         <div class="footer__nav-links">
-                            <a class="footer__nav-link" href="#hero">Главная</a>
-                            <a class="footer__nav-link" href="#about">О компании</a>
-                            <a class="footer__nav-link" href="#projects">Проекты</a>
-                            <a class="footer__nav-link" href="#contacts">Контакты</a>
+                            <a class="footer__nav-link" href="index.html">Главная</a>
+                            <a class="footer__nav-link" href="about-us.html">О компании</a>
+                            <a class="footer__nav-link" href="news.html">Новости</a>
+                            <a class="footer__nav-link" href="contact.html">Контакты</a>
                         </div>
                     </div>
 
@@ -927,9 +927,10 @@
                         <span class="footer__nav-title">Лифты</span>
 
                         <div class="footer__nav-links">
-                            <a class="footer__nav-link" href="#production">Оборудование</a>
-                            <a class="footer__nav-link" href="#about">Команда</a>
-                            <a class="footer__nav-link" href="#contacts">Вакансии</a>
+                            <a class="footer__nav-link" href="passenger-lifts.html">Пассажирские</a>
+                            <a class="footer__nav-link" href="mrl-passenger-lifts.html">Без машинного помещения</a>
+                            <a class="footer__nav-link" href="panoramic-lifts.html">Панорамные</a>
+                            <a class="footer__nav-link" href="home-lifts.html">Коттеджные</a>
                         </div>
                     </div>
                 </div>
@@ -939,10 +940,10 @@
                         <span class="footer__nav-title">Эскалаторы и движущиеся дорожки</span>
 
                         <div class="footer__nav-links">
-                            <a class="footer__nav-link" href="#transport">Что это такое</a>
-                            <a class="footer__nav-link" href="#solutions">Что мы предлагаем</a>
-                            <a class="footer__nav-link" href="#comfort">Преимущества решений</a>
-                            <a class="footer__nav-link" href="#production">Доступные модели</a>
+                            <a class="footer__nav-link" href="escalators.html">Эскалаторы</a>
+                            <a class="footer__nav-link" href="public-escalators.html">Публичные эскалаторы</a>
+                            <a class="footer__nav-link" href="travelators.html">Траволаторы</a>
+                            <a class="footer__nav-link" href="lifts.html">Каталог оборудования</a>
                         </div>
                     </div>
 
@@ -950,9 +951,9 @@
                         <span class="footer__nav-title">Контакты</span>
 
                         <div class="footer__nav-links">
-                            <a class="footer__nav-link" href="https://instagram.com">Instagram</a>
-                            <a class="footer__nav-link" href="https://t.me">Telegram</a>
-                            <a class="footer__nav-link" href="https://wa.me/77000000000">WhatsApp</a>
+                            <a class="footer__nav-link" href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+                            <a class="footer__nav-link" href="https://t.me" target="_blank" rel="noopener">Telegram</a>
+                            <a class="footer__nav-link" href="https://wa.me/77000000000" target="_blank" rel="noopener">WhatsApp</a>
                         </div>
                     </div>
                 </div>
@@ -999,7 +1000,7 @@
 
     <div class="nav-menu__top">
         <div class="header__left">
-            <a class="header__logo" href="/">
+            <a class="header__logo" href="index.html">
                 <img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18">
             </a>
             <span class="header__tagline">вертикальный транспорт любого уровня</span>
@@ -1013,42 +1014,42 @@
     </div>
 
     <nav class="nav-menu__nav">
-      <a href="#hero" class="nav-menu__item">
+      <a href="index.html" class="nav-menu__item">
         <span class="nav-menu__num">01</span>
         <span class="nav-menu__item-right">
           <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
           <span class="nav-menu__item-text">Главная</span>
         </span>
       </a>
-      <a href="#about" class="nav-menu__item">
+      <a href="lifts.html" class="nav-menu__item">
         <span class="nav-menu__num">02</span>
-        <span class="nav-menu__item-right">
-          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
-          <span class="nav-menu__item-text">Каталог</span>
-        </span>
-      </a>
-      <a href="#contacts" class="nav-menu__item">
-        <span class="nav-menu__num">03</span>
         <span class="nav-menu__item-right">
           <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
           <span class="nav-menu__item-text">Лифты</span>
         </span>
       </a>
-      <a href="#what-we-do" class="nav-menu__item">
-        <span class="nav-menu__num">04</span>
+      <a href="escalators.html" class="nav-menu__item">
+        <span class="nav-menu__num">03</span>
         <span class="nav-menu__item-right">
           <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
           <span class="nav-menu__item-text">Эскалаторы</span>
         </span>
       </a>
-      <a href="#work" class="nav-menu__item">
-        <span class="nav-menu__num">05</span>
+      <a href="travelators.html" class="nav-menu__item">
+        <span class="nav-menu__num">04</span>
         <span class="nav-menu__item-right">
           <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
           <span class="nav-menu__item-text">Траволаторы</span>
         </span>
       </a>
-      <a href="#work" class="nav-menu__item">
+      <a href="news.html" class="nav-menu__item">
+        <span class="nav-menu__num">05</span>
+        <span class="nav-menu__item-right">
+          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
+          <span class="nav-menu__item-text">Новости</span>
+        </span>
+      </a>
+      <a href="contact.html" class="nav-menu__item">
         <span class="nav-menu__num">06</span>
         <span class="nav-menu__item-right">
           <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
@@ -1116,7 +1117,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/accordion-js@3.3.4/dist/accordion.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInputWithUtils.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

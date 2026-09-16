@@ -1,0 +1,160 @@
+/* ==========================================================================
+   MRL passenger lifts
+   ==========================================================================
+   The page is built out of the same sections as the escalator pages, so it
+   loads public-escalators.css and its ≤1919 file and only swaps the artwork
+   and the few pieces the layout arranges differently. The catalog between the
+   advantages and the CTA is the production slider from the main page, styled
+   entirely by style.css. */
+
+/* The hero shot sits here rather than inline on .hero__slide, so a narrow
+   crop can take over below 570px — an inline style would win over any media
+   query. */
+.mrl-passenger-lifts-page .hero__slide {
+    background-image: url(../assets/img/mrl-passenger-lifts-hero.webp);
+}
+
+/* 1920×1455 against the 1457 of the shot it replaces — two pixels that cover
+   absorbs, so the pinned cards keep their coordinates. */
+.mrl-passenger-lifts-page .chars {
+    background-image: url(../assets/img/mrl-passenger-lifts-chars.webp);
+}
+
+.mrl-passenger-lifts-page .adv {
+    background-image: url(../assets/img/mrl-passenger-lifts-advantages.webp);
+}
+
+.mrl-passenger-lifts-page .cta__inner {
+    background: url(../assets/img/mrl-passenger-lifts-cta.webp) no-repeat center / cover;
+}
+
+/* On this page the paragraph sits over the gallery instead of under the
+   title, so it rides in the right-hand column and is aligned to its edge. */
+.adv__gallery-note {
+    align-self: flex-start;
+    max-width: 338px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156%;
+    letter-spacing: -0.03em;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.adv__info-text {
+    display: none;
+}
+
+/* the title alone no longer needs the gap the paragraph used to hold */
+.mrl-passenger-lifts-page .adv__info-title {
+    margin-bottom: 60px;
+}
+
+.cta {
+    padding-top: 0;
+}
+
+/* production */
+.production {
+    padding-top: 150px;
+}
+
+.production::before {
+    display: none;
+}
+
+.production__title {
+    font-size: 60px;
+}
+
+/* The catalog's "more" button exists only on phones, where the slider gives no
+   hint that there are further cards. */
+.production__more {
+    display: none;
+}
+
+@media (max-width: 1919px) {
+    .adv__gallery-note {
+        max-width: 253.5px;
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+
+    .mrl-passenger-lifts-page .adv__info-title {
+        margin-bottom: 45px;
+    }
+
+    .production {
+        padding-top: 110px;
+    } 
+
+    .production__title {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 1025px) {
+    /* the gallery is dropped at this width, and the note goes with it */
+    .adv__gallery-note {
+        display: none;
+    }
+}
+
+@media (max-width: 570px) {
+
+    /* .production is a flex column here with its children ordered (title 1,
+       slider 2, nav 3), so the button has to claim a place in that order —
+       without one it would default to 0 and land above the title. */
+    .production__more {
+        order: 4;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .mrl-passenger-lifts-page .production__nav {
+        order: 4;
+    }
+
+    .production__more-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        padding: 23px 37px 23px 31px;
+        border-radius: 999px;
+        background-color: #FFF;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        color: #000;
+    }
+
+    .production__more-btn img {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* The shared file drops the background here so .adv__photo can take over
+       in the flow; the override above is more specific, so it has to step
+       aside at the same breakpoint. */
+    .mrl-passenger-lifts-page .adv {
+        background-image: none;
+    }
+
+    .production__title {
+        font-size: 30px;
+    }
+
+    .pe-hero__title {
+        margin-bottom: 15px;
+    }
+
+    .mrl-passenger-lifts-page .adv__info-title {
+        max-width: 306px;
+    }
+
+    .adv__info-text {
+        display: block;
+    }
+}

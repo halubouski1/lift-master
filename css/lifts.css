@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Lifts — hero
+   ==========================================================================
+   The slider, the background layers and the paddings come from .hero in
+   style.css; only the content layout differs, so it is pinned to the bottom
+   and re-arranged here. */
+.lifts-hero__container {
+    justify-content: flex-end;
+}
+
+.lifts-hero__bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.lifts-hero__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lifts-hero__title {
+    max-width: 880px;
+    margin-bottom: 54px;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 85%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.lifts-hero__text {
+    max-width: 635px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 194%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+/* ==========================================================================
+   Lifts — catalog
+   ==========================================================================
+   The cards are the turnkey ones: same classes, other photos. Only the width
+   is taken over, since here a grid column decides it, not the slider. */
+/* No overflow clipping, so the glow can run into the section below; z-index
+   lifts it above that section's background, while its content (.turnkey__head
+   and .turnkey__slider, both z-index 1 and later in the document) stays on
+   top. The glow is anchored right, so it never widens the page. */
+.lifts-catalog {
+    position: relative;
+    z-index: 1;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #000;
+}
+
+/* colour glow in the bottom-right corner */
+.lifts-catalog::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -220px;
+    width: 634px;
+    height: 1077px;
+    background: url('../assets/img/lifts-catalog-blur.svg') no-repeat center / contain;
+    pointer-events: none;
+}
+
+.lifts-catalog .container {
+    position: relative;
+    z-index: 1;
+}
+
+.lifts-catalog__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.lifts-catalog__grid .turnkey-card {
+    width: auto;
+}
+
+/* .cta */
+.cta__inner {
+    background: url(../assets/img/lift-cta-bg.webp) no-repeat center / cover;
+}
+
+/* Scrim over the photo — it is a bright shot and the white type needs the
+   contrast. z-index -1 puts it above the background image but below the
+   content, same trick the glass streak uses. */
+.cta__inner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(to top, rgba(0, 0, 0, .55) 0%, rgba(0, 0, 0, .28) 45%, rgba(0, 0, 0, .2) 100%);
+    pointer-events: none;
+}

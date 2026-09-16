@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Escalators
+   ==========================================================================
+   The page is built out of the same sections as the public escalators one, so
+   it loads public-escalators.css and its ≤1919 file and only swaps the
+   artwork that differs. Everything else — the layout, the scale, the whole
+   mobile behaviour — is inherited.
+
+   The technical characteristics keep the escalator photo they share with the
+   other page. */
+
+/* The hero shot. It sits here rather than inline on .hero__slide so the
+   narrow crop can take over below 570px — an inline style would win over any
+   media query. */
+.escalators-page .hero__slide {
+    background-image: url(../assets/img/escalator-hero.webp);
+}
+
+/* The advantages shot: same 1920×2404 framing, so min-height and the sticky
+   bottom block carry over untouched. */
+.escalators-page .adv {
+    background-image: url(../assets/img/escalators-advantages.webp);
+}
+
+.pe-hero .hero__slides::before {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .65) 0%, rgba(0, 0, 0, .65) 45%, rgba(0, 0, 0, 0) 100%);
+        height: 600px;
+}
+
+.escalators-page .cta__inner {
+    background: url(../assets/img/escalators-cta.webp) no-repeat center / cover;
+}
+
+@media (max-width: 570px) {
+    /* 360×959 crop of the same shot, framed for a phone */
+    .escalators-page .hero__slide {
+        background-image: url(../assets/img/escalator-hero-mob.webp);
+    }
+
+    .pe-hero .hero__slides::before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .65) 0%, rgba(0, 0, 0, .65) 45%, rgba(0, 0, 0, 0) 100%);
+    height: 200px;
+    }
+
+    /* The shared file drops the background here so .adv__photo can take over
+       in the flow; the override above is more specific, so it has to step
+       aside at the same breakpoint. */
+    .escalators-page .adv {
+        background-image: none;
+    }
+}

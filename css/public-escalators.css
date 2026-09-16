@@ -1,0 +1,565 @@
+/* ==========================================================================
+   Public escalators — hero
+   ==========================================================================
+   The photo layer, the scrim and the full-screen height come from .hero in
+   style.css. Everything below is only the content, pinned to the bottom of
+   the screen the same way the news and about heroes are. */
+
+/* Extra darkening at the top so the header stays legible over the bright
+   ceiling of the shot. */
+.pe-hero .hero__slides::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: 1;
+    height: 420px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .65) 0%, rgba(0, 0, 0, .25) 45%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+}
+
+.hero__slides::after {
+        background: linear-gradient(to top, rgba(0, 0, 0, .32) 0%, rgba(0, 0, 0, .52) 30%, rgba(0, 0, 0, 0) 60%);
+}
+
+.pe-hero__container {
+    justify-content: flex-end;
+    padding-top: 0;
+    padding-bottom: 48px;
+}
+
+.pe-hero__intro {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+
+.pe-hero__text {
+    max-width: 377px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 163%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+/* Runs from the very left edge of the screen — it sits outside the container
+   on purpose — and stops at the container padding on the right, where it ends
+   in a short thick cap. */
+.pe-hero__line {
+    position: relative;
+    height: 1px;
+    margin-right: 56px;
+    margin-bottom: 200px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.pe-hero__line::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    width: 63px;
+    height: 6px;
+    background-color: #FFF;
+}
+
+.pe-hero__bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.pe-hero__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pe-hero__eyebrow {
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.pe-hero__title {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.pe-hero__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.pe-hero__scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 95px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1000px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.02);
+    transition: background-color .3s ease, border-color .3s ease;
+}
+
+.pe-hero__scroll:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.pe-hero__scroll img {
+    width: 20px;
+    height: 28px;
+}
+
+.pe-hero__scroll-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* ==========================================================================
+   Public escalators — technical characteristics
+   ==========================================================================
+   The escalator shot is the section background at its own 1920×1457 size, so
+   min-height matches the artwork and the three glass cards can be pinned to
+   the points of the photo they point at. */
+.chars {
+    position: relative;
+    min-height: 1457px;
+    padding-top: 93px;
+    background: #000 url(../assets/img/public-escalators-chars.webp) no-repeat center top / cover;
+    color: #FFF;
+}
+
+/* the cards are positioned against the container, so it has to span the
+   whole section rather than only the head */
+.chars__container {
+    position: relative;
+    height: 100%;
+    min-height: 1367px;
+}
+
+.chars__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.chars__title {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 127%;
+    letter-spacing: -0.03em;
+    background: linear-gradient(97.16deg, #fff 43.04%, #404040 81.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* The values spread across the right half of the row the way they do in the
+   artwork: the strip takes the space next to the title and the items are
+   pushed apart inside it. */
+.chars__specs {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    max-width: 1035px;
+    gap: 85px;
+}
+
+.chars__spec {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 176%;
+    letter-spacing: -0.03em;
+    color: rgba(255, 255, 255, 0.4);
+    white-space: nowrap;
+}
+
+.chars__spec::before {
+    content: '';
+    flex-shrink: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: currentColor;
+}
+
+.chars__spec--accent {
+    color: #fff;
+}
+
+.chars__line {
+    display: block;
+    height: 1px;
+    margin-top: 82px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Cards --------------------------------------------------------------------
+   Pinned to the photo, so their coordinates are the ones from the artwork
+   measured against the container box; the ≤1919 file scales them with
+   everything else. */
+.chars__cards {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+/* The track and the groups only exist for the ≤769 marquee; here they are
+   dissolved so the cards stay direct children in the layout sense and keep
+   positioning against .chars__cards, and the duplicate set is dropped. */
+.chars__cards-track,
+.chars__cards-group {
+    display: contents;
+}
+
+.chars__cards-group--clone {
+    display: none;
+}
+
+.chars-card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 487px;
+    min-height: 233px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 19px;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    background: rgba(255, 255, 255, 0.02);
+    pointer-events: auto;
+}
+
+.chars-card--first {
+    top: 325px;
+    left: 402px;
+}
+
+.chars-card--second {
+    top: 595px;
+    right: 275px;
+}
+
+.chars-card--third {
+    top: 1000px;
+    left: 350px;
+}
+
+.chars-card__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.chars-card__body {
+    margin-top: 60px;
+}
+
+.chars-card__title {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.chars-card__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================================================================
+   Public escalators — advantages
+   ==========================================================================
+   The shot is the section background at its own 1920×2402 size, so the section
+   is exactly as tall as the artwork. Nothing inside is absolutely positioned:
+   the section is a flex column with space-between, which pins the card row to
+   the top and the text block to the bottom of the photo. That is what makes
+   the mobile version free — the background is dropped, .adv__photo comes back
+   into the flow between the two blocks, and the same markup stacks. */
+.adv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 2402px;
+    padding-top: 140px;
+    padding-bottom: 95px;
+    background: #0d0a08 url(../assets/img/public-escalators-advantages.webp) no-repeat center top / cover;
+    color: #FFF;
+}
+
+.adv__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 77px;
+}
+
+.adv__heading {
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 102%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    max-width: 770px;
+}
+
+.adv__nav {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+/* Both sliders use the round white .stats__nav-btn from style.css; only the
+   direction of the arrow has to be declared here, since the rotation rule
+   over there is written per section. */
+.adv__nav-btn--next .stats__nav-icon,
+.adv__gallery-btn--next .stats__nav-icon {
+    transform: rotate(180deg);
+}
+
+/* the slider sits outside .container so the row can bleed past the edge when
+   there are more cards than fit; the padding comes back as swiper offsets */
+.adv__slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Every card is a glass panel with a white note sitting in its bottom-left
+   corner — the panel is taller than the note, so the frosted strip stays
+   visible above it. */
+.adv-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 607px;
+    height: auto;
+    min-height: 353px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.adv-card__inner {
+    padding: 35px;
+    padding-right: 20px;
+    margin-right: 76px;
+    border-radius: 4px;
+    background-color: #FFF;
+    color: #282828;
+    min-height: 250px;
+}
+
+.adv-card__icon {
+    display: block;
+    width: 18px;
+    height: 22px;
+    margin-bottom: 60px;
+}
+
+.adv-card__title {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 104%;
+    letter-spacing: -0.03em;
+    color: #2e1d16;
+}
+
+.adv-card__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: rgba(46, 29, 22, 0.5);
+}
+
+/* the in-flow copy of the background, only used below 769px */
+/* <picture> wrapper: the styles stay on it, the <img> just fills it so the
+   570px source can swap in without touching the layout */
+.adv__photo {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.adv__photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.adv__bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.adv__info-title {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 85%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.adv__info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    max-width: 595px;
+    margin-bottom: 80px;
+}
+
+.adv__info-text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 117%;
+    color: #fff;
+}
+
+.adv__gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 70px;
+}
+
+.adv__info-btn {
+    gap: 90px;
+}
+
+/* the arrows are pinned to the two vertical edges of the photo, half on and
+   half off — hence the negative offsets of half their own width */
+.adv__gallery-media {
+    position: relative;
+    width: 338px;
+}
+
+.adv__gallery-slider {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.adv__gallery-img {
+    display: block;
+    width: 100%;
+    height: 458px;
+    object-fit: cover;
+}
+
+.adv__gallery-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.adv__gallery-btn--prev {
+    left: -52px;
+}
+
+.adv__gallery-btn--next {
+    right: -52px;
+}
+
+/* Pagination ---------------------------------------------------------------
+   One dark capsule holding the bullets. The active one grows into a light
+   track with a white marker at its head; the rest stay as plain dots. */
+.adv__gallery-pagination {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: auto !important;
+    margin-top: 30px;
+    padding: 7px;
+    border-radius: 1000px;
+    background-color: #000;
+}
+
+.adv__gallery-pagination .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 !important;
+    border-radius: 1000px;
+    background-color: #3c3c3c;
+    opacity: 1;
+    transition: width .35s ease, background-color .35s ease;
+}
+
+.adv__gallery-pagination .swiper-pagination-bullet-active {
+    position: relative;
+    width: 57px;
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.adv__gallery-pagination .swiper-pagination-bullet-active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 90px;
+    background-color: #FFF;
+}
+
+/* .cta */
+.cta {
+    padding-top: 150px;
+}
+
+.cta__inner {
+    background: url(../assets/img/public-escalators-cta.jpg) no-repeat center / cover;
+}
+
+/* Scrim over the photo — it is a bright shot and the white type needs the
+   contrast. z-index -1 puts it above the background image but below the
+   content, same trick the glass streak uses. */
+.cta__inner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(to top, rgba(0, 0, 0, .55) 0%, rgba(0, 0, 0, .28) 45%, rgba(0, 0, 0, .2) 100%);
+    pointer-events: none;
+}

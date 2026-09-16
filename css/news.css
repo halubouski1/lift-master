@@ -1,0 +1,629 @@
+/* ==========================================================================
+   News — hero
+   ==========================================================================
+   The slide layer, the scrim and the height come from .hero in style.css.
+   Everything here is the content: pinned to the bottom, with the rule running
+   the full width of the screen rather than the container. */
+/* The shot is bright at the top, so the header needs a scrim of its own —
+   .hero__slides::after in style.css only darkens the bottom. */
+.news-hero .hero__slides::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: 1;
+    height: 420px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .65) 0%, rgba(0, 0, 0, .25) 45%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+}
+
+.news-hero__container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 48px;
+}
+
+.news-hero__intro {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 46px;
+}
+
+.news-hero__text {
+    max-width: 377px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 194%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+/* Runs from the very left edge of the screen — it sits outside the container
+   on purpose — and stops at the container padding on the right, where it ends
+   in a short thick cap. */
+.news-hero__line {
+    position: relative;
+    height: 1px;
+    margin-right: 56px;
+    margin-bottom: 300px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.news-hero__line::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    width: 63px;
+    height: 6px;
+    background-color: #FFF;
+}
+
+.news-hero__bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.news-hero__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.news-hero__title {
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 75%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.news-hero__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.news-hero__scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 95px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1000px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.02);
+    transition: background-color .3s ease, border-color .3s ease;
+}
+
+.news-hero__scroll:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.news-hero__scroll img {
+    width: 20px;
+    height: 28px;
+}
+
+.news-hero__scroll-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: rgba(255, 255, 255, 0.4)
+}
+
+/* ==========================================================================
+   News — list
+   ========================================================================== */
+.news {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #000;
+    color: #FFF;
+}
+
+/* Filters ---------------------------------------------------------------- */
+.news__filters {
+    display: flex;
+    gap: 20px;
+}
+
+.news-filter {
+    position: relative;
+}
+
+.news-filter__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-width: 196px;
+    padding: 15px 20px 15px 30px;
+    border: 1px solid rgba(175, 175, 175, 0.55);
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    transition: border-color .3s ease, background-color .3s ease;
+}
+
+.news-filter__btn:hover,
+.news-filter.is-open .news-filter__btn {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.news-filter__chevron {
+    width: 12px;
+    height: auto;
+    flex-shrink: 0;
+    transition: transform .3s ease;
+}
+
+.news-filter.is-open .news-filter__chevron {
+    transform: rotate(180deg);
+}
+
+.news-filter__menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 10;
+    min-width: 316px;
+    width: 100%;
+    padding: 13px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    background: rgba(0, 0, 0, 0.02);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
+}
+
+.news-filter.is-open .news-filter__menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.news-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #fff;
+    cursor: pointer;
+    transition: color .2s ease;
+}
+
+.news-option:hover {
+    color: #ffffffa5;
+}
+
+.news-option:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.news-option__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.news-option__mark {
+    position: relative;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #afafaf;
+    border-radius: 50%;
+    transition: border-color .2s ease;
+}
+
+.news-option__mark::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform .2s ease;
+}
+
+.news-option__input:checked + .news-option__mark {
+    border-color: #FFF;
+}
+
+.news-option__input:checked + .news-option__mark::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.news-option__input:checked ~ .news-option__text {
+    color: #FFF;
+}
+
+/* Cards ------------------------------------------------------------------ */
+.news__featured {
+    display: grid;
+    /* minmax(0, …) lets a column get narrower than its content — without it
+       the one-line titles blow the columns out and the ellipsis never kicks in */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.news__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 20px;
+    row-gap: 70px;
+    margin-top: 100px;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    color: inherit;
+    transition: opacity .45s ease, transform .45s ease;
+}
+
+/* the state a card is put into just before it is shown again — JS drops the
+   class on the next frame, so filtering and paging fade the cards in */
+.news-card--enter {
+    opacity: 0;
+    transform: translateY(18px);
+}
+
+/* display: flex above would otherwise beat the browser's [hidden] rule */
+.news-card[hidden] {
+    display: none;
+}
+
+.news-card__media {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.news-card__img {
+    width: 100%;
+    height: 100%;
+    height: 461px;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.news-card--big .news-card__img {
+    min-height: 574px;
+}
+
+.news-card:hover .news-card__img {
+    transform: scale(1.03);
+}
+
+/* Blurred band lying across the corner the controls sit in */
+.news-card__glare {
+    position: absolute;
+    top: -30%;
+    width: 390px;
+    height: 160%;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+    border-right: 1px solid rgba(255, 255, 255, 0.14);
+    pointer-events: none;
+    transform: rotate(27deg);
+    pointer-events: none;
+}
+
+.news-card--big .news-card__glare {
+    right: -20%;
+}
+
+.news-card:not(.news-card--big) .news-card__glare {
+    left: -250px;
+}
+
+.news-card__arrow {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFF;
+    transition: transform .3s ease;
+}
+
+/* on the small cards the circle sits in the bottom corner instead */
+.news-card:not(.news-card--big) .news-card__arrow {
+    top: auto;
+    bottom: 20px;
+}
+
+.news-card__arrow img {
+    width: 8px;
+    height: 8px;
+    rotate: -45deg;
+}
+
+.news-card:not(.news-card--big) .news-card__arrow img {
+    rotate: 0deg;
+} 
+
+.news-card:hover .news-card__arrow {
+    transform: translate(3px, -3px);
+}
+
+.news-card__tags {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+}
+
+/* big card: pinned bottom-right — the badge on its own row, the category
+   tags side by side underneath it */
+.news-card--big .news-card__tags {
+    right: 28px;
+    bottom: 30px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.news-card__tags-row {
+    display: flex;
+    gap: 10px;
+}
+
+/* small card: pinned top-left, one tag to a row */
+.news-card:not(.news-card--big) .news-card__tags {
+    top: 30px;
+    left: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.news-card:not(.news-card--big) .news-card__tags-row {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.news-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 23px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.news-tag::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background-color: #FFF;
+}
+
+.news-tag--new::before {
+    background-color: #ff5300;
+}
+
+.news-card__title {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 148%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    transition: opacity .3s ease;
+}
+
+/* the small cards keep their title on one line, cut with an ellipsis */
+.news-card:not(.news-card--big) .news-card__title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news-card:hover .news-card__title {
+    opacity: .7;
+}
+
+/* Pagination ------------------------------------------------------------- */
+.news__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 39px;
+    margin-top: 70px;
+}
+
+.news__pagination:empty {
+    display: none;
+}
+
+.news__page {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #FFF;
+    transition: color .25s ease;
+}
+
+.news__page:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.news__page.is-active {
+    color: #555050;
+    cursor: default;
+}
+
+/* ==========================================================================
+   News — recent slider
+   ========================================================================== */
+.recent {
+    padding-bottom: 100px;
+    background-color: #000;
+    color: #FFF;
+}
+
+.recent__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.recent__title {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.recent__title span {
+    color: #8b8f94;
+}
+
+.recent__nav {
+    display: flex;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.recent__nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #FFF;
+    transition: background-color .3s ease, border-color .3s ease, opacity .3s ease;
+}
+
+.recent__nav-btn--prev img {
+    rotate: 180deg;
+}
+
+/* Swiper marks the ends of the slider with this class */
+.recent__nav-btn.swiper-button-disabled {
+    border-color: rgba(255, 255, 255, 0.25);
+    background-color: transparent;
+    cursor: default;
+}
+
+.recent__nav-btn.swiper-button-disabled img {
+    opacity: .35;
+    filter: invert(1);
+}
+
+/* the slider runs past the container; the padding comes back as swiper
+   offsets, so the cards keep their left edge and bleed off on the right */
+.recent__slider {
+    width: 100%;
+    margin-top: 45px;
+    overflow: hidden;
+}
+
+.recent-card {
+    display: flex;
+    flex-direction: column;
+    width: 532px;
+    height: auto;
+    color: inherit;
+}
+
+.recent-card__media {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.recent-card__img {
+    width: 100%;
+    height: 438px;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.recent-card:hover .recent-card__img {
+    transform: scale(1.03);
+}
+
+.recent-card__arrow {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFF;
+    transition: transform .3s ease;
+}
+
+.recent-card__arrow img {
+    width: 10px;
+    height: 10px;
+}
+
+.recent-card:hover .recent-card__arrow {
+    transform: translate(3px, -3px);
+}
+
+.recent-card__title {
+    margin-top: 37px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 115%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    transition: opacity .3s ease;
+}
+
+.recent-card:hover .recent-card__title {
+    opacity: .7;
+}

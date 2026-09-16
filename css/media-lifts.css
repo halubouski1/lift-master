@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Lifts — ≤1919px: the hero at the 0.75 scale the rest of the site uses
+   ==========================================================================
+   Generated from the hero block of lifts.css. Percentages, em values and
+   hairlines (1px and under) are left as they are. */
+@media (max-width: 1919px) {
+    .lifts-hero__bottom {
+        gap: 30px;
+    }
+
+    .lifts-hero__title {
+        max-width: 660px;
+        margin-bottom: 40.5px;
+        font-size: 75px;
+    }
+
+    .lifts-hero__text {
+        max-width: 476.25px;
+        font-size: 12px;
+    }
+
+    /* .lifts-catalog */
+    .lifts-catalog {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+
+    .lifts-catalog__grid {
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 1270px) {
+    .lifts-hero__title {
+        font-size: 60px;
+    }
+
+    .lifts-catalog__grid {
+            grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1025px) {
+    .lifts-hero__bottom {
+        flex-direction: column;
+    }
+
+    .lifts-hero__left {
+        align-self: start;
+    }
+
+    .lifts-catalog__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 769px) {
+    .lifts-hero__text {
+        display: none;
+    }
+
+    .lifts-hero__title {
+        font-size: 50px;
+    }
+
+    .lifts-catalog__grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 570px) {
+    .turnkey-card:nth-child(1) {
+        top: 0px;
+    }
+
+    /* hero */
+    .lifts-hero__title {
+        max-width: 320px;
+        font-size: 45px;
+        line-height: 82%;
+        margin-bottom: 30px;
+    }
+
+    .btn-arrow {
+        font-size: 16px;
+        padding: 4px 4px 4px 35px;
+        gap: 99px;
+    }
+
+    .btn-arrow__icon {
+        width: 54px;
+        height: 54px;
+    }
+
+    .btn-arrow__icon img {
+        width: 10px;
+        height: 10px;
+    }
+
+    /* catalog */
+    .lifts-catalog {
+        padding-top: 65px;
+        padding-bottom: 200px;
+    }
+
+    .lifts-catalog::after {
+        bottom: -400px;
+    }
+
+    /* cta */
+    .cta__inner {
+    background: url(../assets/img/lift-cta-mob.jpg) no-repeat center / cover;
+    }
+
+    .lifts-catalog {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    /* one column, so the cards can stack into the deck (see [data-deck] in
+       media.css). This deck is a staircase rather than a straight overlap:
+       a small step keeps the tops of all seven cards visible. */
+    .lifts-catalog__grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        --deck-top: 20px;
+        --deck-step: 14px;
+    }
+}

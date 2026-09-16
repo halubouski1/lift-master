@@ -102,6 +102,23 @@
         gap: 10.5px;
     }
 
+    .btn-arrow {
+        gap: 22.5px;
+        padding: 3.75px 3.75px 3.75px 22.5px;
+        border-radius: 67.5px;
+        font-size: 11.25px;
+    }
+
+    .btn-arrow__icon {
+        width: 32.25px;
+        height: 32.25px;
+    }
+
+    .btn-arrow__icon img {
+        width: 6px;
+        height: 6px;
+    }
+
     .hero__pagination {
         right: 42px;
         gap: 9.75px;
@@ -2080,12 +2097,7 @@
         padding: 17px;
     }
 
-    /* each card parks a little lower, so the ones below slide over it and the
-       headers of the cards underneath stay visible — the deck effect */
-    .turnkey-card:nth-child(1) { top: 20px; }
-    .turnkey-card:nth-child(2) { top: 70px; }
-    .turnkey-card:nth-child(3) { top: 110px; }
-    .turnkey-card:nth-child(4) { top: 140px; }
+    /* the sticky offsets come from the generic deck rule below */
 
     /* transport: the same sticky deck as turnkey — cards keep their own look
        and slide over each other, leaving the top of the ones below visible */
@@ -2095,13 +2107,21 @@
 
     .transport-card {
         background: rgba(0, 0, 0, 0.6);
-        position: sticky;
     }
 
-    .transport-card:nth-child(1) { top: 20px; }
-    .transport-card:nth-child(2) { top: 60px; }
-    .transport-card:nth-child(3) { top: 100px; }
-    .transport-card:nth-child(4) { top: 140px; }
+    /* ------------------------------------------------------------------ *
+     * Sticky deck                                                         *
+     * ------------------------------------------------------------------ *
+     * Any container marked data-deck turns its children into a deck: each
+     * card parks a step lower than the one before, so the tops of the cards
+     * underneath stay visible while you scroll. main.js numbers the children
+     * in --deck-index, so this works for any amount of cards, in a flex
+     * column or in a grid. Steps are tunable per deck with --deck-top and
+     * --deck-step. */
+    [data-deck] > * {
+        position: sticky;
+        top: calc(var(--deck-top, 20px) + var(--deck-index, 0) * var(--deck-step, 40px));
+    }
 
     .turnkey-card__count {
         font-size: 35px;
@@ -2500,7 +2520,11 @@
 
     .footer__nav-link {
         font-size: 14px;
-        line-height: 33px;
+        line-height: 19px;
+    }
+
+    .footer__nav-links {
+        gap: 18px;
     }
 
     .footer__nav {

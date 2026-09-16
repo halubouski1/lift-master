@@ -1,0 +1,532 @@
+/* ==========================================================================
+   News — ≤1919px, the same 0.75 scale the rest of the site uses
+   ==========================================================================
+   Generated from news.css: every px value multiplied by 0.75. Percentages,
+   em values and hairlines (1px and under) are left as they are. */
+@media (max-width: 1919px) {
+    .news-hero .hero__slides::before {
+        height: 315px;
+    }
+
+    .news-hero__container {
+        padding-bottom: 36px;
+    }
+
+    .news-hero__intro {
+        margin-bottom: 34.5px;
+    }
+
+    .news-hero__text {
+        max-width: 282.75px;
+        font-size: 12px;
+    }
+
+    .news-hero__line {
+        margin-right: 42px;
+        margin-bottom: 225px;
+    }
+
+    .news-hero__line::after {
+        width: 47.25px;
+        height: 4.5px;
+    }
+
+    .news-hero__bottom {
+        gap: 30px;
+    }
+
+    .news-hero__title {
+        margin-bottom: 24px;
+        font-size: 75px;
+    }
+
+    .news-hero__aside {
+        gap: 7.5px;
+    }
+
+    .news-hero__scroll {
+        width: 71.25px;
+        height: 71.25px;
+        border-radius: 750px;
+        backdrop-filter: blur(7.5px);
+        -webkit-backdrop-filter: blur(7.5px);
+    }
+
+    .news-hero__scroll img {
+        width: 15px;
+        height: 21px;
+    }
+
+    .news-hero__scroll-label {
+        font-size: 10.5px;
+    }
+
+    .news {
+        padding-top: 112.5px;
+        padding-bottom: 112.5px;
+    }
+
+    .news__filters {
+        gap: 15px;
+    }
+
+    .news-filter__btn {
+        gap: 15px;
+        min-width: 147px;
+        padding: 11.25px 15px 11.25px 22.5px;
+        border-radius: 75px;
+        font-size: 12px;
+    }
+
+    .news-filter__chevron {
+        width: 9px;
+    }
+
+    .news-filter__menu {
+        top: calc(100% + 6px);
+        min-width: 237px;
+        padding: 9.75px 13.5px;
+        border-radius: 15px;
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        transform: translateY(-4.5px);
+    }
+
+    .news-option {
+        gap: 7.5px;
+        padding: 7.5px 0px;
+        font-size: 10.5px;
+    }
+
+    .news-option__mark {
+        width: 12px;
+        height: 12px;
+    }
+
+    .news-option__mark::after {
+        width: 7.5px;
+        height: 7.5px;
+    }
+
+    .news__featured {
+        gap: 15px;
+        margin-top: 37.5px;
+    }
+
+    .news__grid {
+        column-gap: 15px;
+        row-gap: 52.5px;
+        margin-top: 75px;
+    }
+
+    .news-card--enter {
+        transform: translateY(13.5px);
+    }
+
+    .news-card__media {
+        border-radius: 7.5px;
+    }
+
+    .news-card__img {
+        height: 345.75px;
+    }
+
+    .news-card--big .news-card__img {
+        min-height: 430.5px;
+    }
+
+    .news-card__glare {
+        width: 292.5px;
+        backdrop-filter: blur(10.5px);
+        -webkit-backdrop-filter: blur(10.5px);
+    }
+
+    .news-card:not(.news-card--big) .news-card__glare {
+        left: -187.5px;
+    }
+
+    .news-card__arrow {
+        top: 15px;
+        right: 15px;
+        width: 33px;
+        height: 33px;
+    }
+
+    .news-card:not(.news-card--big) .news-card__arrow {
+        bottom: 15px;
+    }
+
+    .news-card__arrow img {
+        width: 6px;
+        height: 6px;
+    }
+
+    .news-card:hover .news-card__arrow {
+        transform: translate(2.25px, -2.25px);
+    }
+
+    .news-card__tags {
+        gap: 7.5px;
+    }
+
+    .news-card--big .news-card__tags {
+        right: 21px;
+        bottom: 22.5px;
+    }
+
+    .news-card__tags-row {
+        gap: 7.5px;
+    }
+
+    .news-card--big .news-card__title {
+        max-width: 525px;
+    }
+
+    .news-card:not(.news-card--big) .news-card__tags {
+        top: 22.5px;
+        left: 22.5px;
+    }
+
+    .news-tag {
+        gap: 6.75px;
+        padding: 7.5px 13.5px;
+        border-radius: 17.25px;
+        font-size: 10.5px;
+    }
+
+    .news-tag::before {
+        width: 6px;
+        height: 6px;
+        border-radius: 1.5px;
+    }
+
+    .news-card__title {
+        margin-top: 15px;
+        font-size: 18.75px;
+    }
+
+    .news__pagination {
+        gap: 29.25px;
+        margin-top: 52.5px;
+    }
+
+    .news__page {
+        font-size: 12px;
+    }
+
+    .recent {
+        padding-bottom: 75px;
+    }
+
+    .recent__head {
+        gap: 30px;
+    }
+
+    .recent__title {
+        font-size: 33.75px;
+    }
+
+    .recent__nav {
+        gap: 12px;
+    }
+
+    .recent__nav-btn {
+        width: 37.5px;
+        height: 37.5px;
+    }
+
+    .recent__slider {
+        margin-top: 33.75px;
+    }
+
+    .recent-card {
+        width: 399px;
+    }
+
+    .recent-card__media {
+        border-radius: 3px;
+    }
+
+    .recent-card__img {
+        height: 328.5px;
+    }
+
+    .recent-card__arrow {
+        right: 15px;
+        bottom: 15px;
+        width: 33px;
+        height: 33px;
+    }
+
+    .recent-card__arrow img {
+        width: 7.5px;
+        height: 7.5px;
+    }
+
+    .recent-card:hover .recent-card__arrow {
+        transform: translate(2.25px, -2.25px);
+    }
+
+    .recent-card__title {
+        margin-top: 27.75px;
+        font-size: 19.5px;
+    }
+
+    .recent__nav-btn img {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .news__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 52px;
+    }
+
+    .news-hero__intro, .news-hero__aside, .news-hero__line {
+        display: none;
+    }
+
+    .news-card--big .news-card__img {
+        min-height: 345px;
+    }
+}
+
+@media (max-width: 769px) {
+    .news__featured, .news__grid {
+            grid-template-columns: 1fr;
+    }
+
+        /* recent: the arrows move under the slider.
+       display: contents dissolves the header wrapper, so the title, the
+       slider and the arrows become siblings of the section and can be
+       reordered. */
+    .recent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recent__head {
+        display: contents;
+    }
+
+    .recent__title {
+        order: 1;
+        /* the .container padding lived on the wrapper that just dissolved */
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+
+    .recent__slider {
+        order: 2;
+    }
+
+    .recent__nav {
+        order: 3;
+        margin-top: 50px;
+        padding-left: 42px;
+    }
+}
+
+@media (max-width: 570px) {
+    .news-hero__title {
+        font-size: 45px;
+        line-height: 82%;
+        margin-bottom: 30px;
+    }
+    
+    .btn-arrow {
+        font-size: 16px;
+        padding: 4px 4px 4px 35px;
+        gap: 99px;
+    }
+
+    .btn-arrow__icon {
+        width: 54px;
+        height: 54px;
+    }
+
+    .btn-arrow__icon img {
+        width: 10px;
+        height: 10px;
+    }
+
+    /* .news */
+    .news {
+        padding-top: 34px;
+        padding-bottom: 100px;
+    }
+
+    .news-filter, .news-filter__btn {
+        width: 100%;
+    }
+
+    .news__filters {
+        gap: 10px;
+    }
+
+    .news-filter__btn {
+        font-size: 14px;
+        min-height: 46px;
+    }
+
+    .news__featured {
+        margin-top: 50px;
+    }
+
+    .news-card__arrow {
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .news-card__arrow img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .news-card--big .news-card__img {
+        height: 245px;
+        min-height: 245px;
+    }
+
+    .news-card--big .news-card__tags {
+        bottom: 13px;
+        right: 13px;
+        gap: 4px;
+    }
+
+    .news-card__tags-row {
+        gap: 4px;
+    }
+
+    .news-tag {
+        font-size: 12px;
+    }
+
+    .news-card__title {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 119%;
+    }
+
+    .news__featured {
+        gap: 30px;
+    }
+
+    .news__grid {
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .news-card:not(.news-card--big) .news-card__tags {
+        top: 13px;
+        left: 13px;
+    }
+
+    .news-card__img {
+        height: 245px;
+    }
+
+    /* two lines, then an ellipsis. The base rule keeps the title on one line
+       with nowrap, so that has to be released first, and a clamp only works
+       inside a -webkit-box. */
+    /* Two lines, then an ellipsis. The base rule in news.css pins these to one
+       line with nowrap and its selector carries three classes (:not() counts),
+       so the override has to match that weight — hence the split selector. */
+    .news-card:not(.news-card--big) .news-card__title,
+    .news-card--big .news-card__title {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+
+    .news-card:not(.news-card--big) .news-card__arrow {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .news__page {
+        font-size: 14px;
+    } 
+
+    .news-option {
+        font-size: 14px;
+    }
+
+    .news-filter__menu {
+        min-width: auto;
+    }
+
+
+    /* Dropdowns open across the whole filter row instead of hanging off their
+       own button — there is not enough room next to the second one. Dropping
+       position: relative on the filter makes the row the positioning context. */
+    .news__filters {
+        position: relative;
+    }
+
+    .news-filter {
+        position: static;
+    }
+
+    .news-filter__menu {
+        left: 0;
+        right: 0;
+        width: auto;
+    }
+
+    /* recent */
+    .recent {
+        padding-bottom: 100px;
+    }
+
+    .recent__title {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 34px;
+        max-width: 320px;
+    }
+
+    .recent__slider {
+        margin-top: 30px;
+    }
+
+    /* one card per screen: the width minus both 20px slider offsets */
+    .recent-card {
+        width: calc(100vw - 40px);
+    }
+
+    .recent-card__img {
+        height: 265px;
+    } 
+
+    .recent-card__arrow {
+        right: 10px;
+        bottom: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .recent-card__arrow img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .recent-card__title {
+        margin-top: 17px;
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+    .recent__nav {
+        padding-left: 20px;
+        gap: 7px;
+    }
+}

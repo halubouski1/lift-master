@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/media.css">
+      <link rel="stylesheet" href="css/public-escalators.css">
+      <link rel="stylesheet" href="css/media-public-escalators.css">
+      <link rel="stylesheet" href="css/escalators.css">
+      <script>document.documentElement.style.setProperty("--fixed-vh", window.innerHeight + "px");</script>
+      <title>Эскалаторы — Lift Master</title>
+</head>
+<body class="escalators-page">
+
+<header class="header">
+    <div class="container header__container">
+        <div class="header__left">
+            <a class="header__logo" href="index.html">
+                <img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18">
+            </a>
+            <span class="header__tagline">вертикальный транспорт любого уровня</span>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a class="header__menu-link" href="index.html">Главная</a></li>
+                <li><a class="header__menu-link" href="lifts.html">Лифты</a></li>
+                <li><a class="header__menu-link" href="escalators.html">Эскалаторы и дорожки</a></li>
+                <li><a class="header__menu-link" href="about-us.html">О компании</a></li>
+                <li><a class="header__menu-link" href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__right">
+            <div class="header__actions">
+                <a class="header__action" href="lifts.html">
+                    <span>Каталог</span>
+                    <img src="assets/icons/header-link-arrow.svg" alt="" width="8" height="8" aria-hidden="true">
+                </a>
+                <button class="header__action"  data-popup-open="modal">
+                    <span>Обсудить проект</span>
+                    <img src="assets/icons/header-link-arrow.svg" alt="" width="8" height="8" aria-hidden="true">
+                </button>
+            </div>
+
+            <button class="header__burger" type="button" aria-label="Открыть меню">
+                <img src="assets/icons/burger-menu.svg" alt="" width="19" height="11" aria-hidden="true">
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero pe-hero" id="hero">
+        <div class="hero__slides">
+            <!-- the shot lives in escalators.css so the 570px crop can swap in;
+                 an inline style here would outrank the media query -->
+            <div class="hero__slide is-active"></div>
+        </div>
+
+        <div class="hero__container pe-hero__container">
+            <div class="container pe-hero__intro">
+                <p class="pe-hero__text">Подберите оптимальное решение для жилых, коммерческих и общественных объектов. Современное оборудование с акцентом на безопасность, надёжность и комфорт.</p>
+            </div>
+
+            <span class="pe-hero__line"></span>
+
+            <div class="container pe-hero__bottom">
+                <div class="pe-hero__left">
+                    <span class="pe-hero__eyebrow">С режимом экономии электроэнергии</span>
+
+                    <h1 class="pe-hero__title">Эскалаторы</h1>
+
+                    <button type="button" class="btn-arrow pe-hero__btn" data-popup-open="modal">
+                        Узнать подробнее
+                        <span class="btn-arrow__icon">
+                            <img src="assets/icons/header-link-arrow.svg" alt="" width="8" height="8">
+                        </span>
+                    </button>
+                </div>
+
+                <div class="pe-hero__aside">
+                    <button class="pe-hero__scroll" type="button" data-scroll-next aria-label="К следующей секции">
+                        <img src="assets/icons/learn-more.svg" alt="" width="20" height="28">
+                    </button>
+
+                    <span class="pe-hero__scroll-label">Узнать больше</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chars" id="chars">
+        <div class="container chars__container">
+            <div class="chars__head">
+                <h2 class="chars__title">Технические характеристики:</h2>
+
+                <ul class="chars__specs">
+                    <li class="chars__spec chars__spec--accent">ТЦ, аэропорты, вокзалы</li>
+                    <li class="chars__spec">8 м</li>
+                    <li class="chars__spec">30, 35 градусов</li>
+                    <li class="chars__spec">600, 800, 1000 мм</li>
+                </ul>
+            </div>
+
+            <span class="chars__line"></span>
+
+            <div class="chars__cards">
+                <div class="chars__cards-track">
+                    <div class="chars__cards-group">
+                        <article class="chars-card chars-card--first" data-aos="fade-up" data-aos-delay="100">
+                            <img class="chars-card__icon" src="assets/icons/chars-dots.svg" alt="">
+
+                            <div class="chars-card__body">
+                                <h3 class="chars-card__title">Самодиагностика</h3>
+                                <p class="chars-card__text">Система проверяет работу оборудования <br> и выводит результаты на дисплей</p>
+                            </div>
+                        </article>
+
+                        <article class="chars-card chars-card--second" data-aos="fade-up" data-aos-delay="200">
+                            <img class="chars-card__icon" src="assets/icons/chars-dots.svg" alt="">
+
+                            <div class="chars-card__body">
+                                <h3 class="chars-card__title">Безопасность</h3>
+                                <p class="chars-card__text">Важные компоненты снабжены <br> аварийными выключателями</p>
+                            </div>
+                        </article>
+
+                        <article class="chars-card chars-card--third" data-aos="fade-up" data-aos-delay="300">
+                            <img class="chars-card__icon" src="assets/icons/chars-dots.svg" alt="">
+
+                            <div class="chars-card__body">
+                                <h3 class="chars-card__title">Изящность</h3>
+                                <p class="chars-card__text">Приводную шестерню легко заменить, а приводная <br> цепь сделана из особо прочного материала</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- second copy: only the ≤769 marquee uses it -->
+                    <div class="chars__cards-group chars__cards-group--clone" aria-hidden="true">
+                        <article class="chars-card chars-card--first">
+                            <img class="chars-card__icon" src="assets/icons/chars-dots.svg" alt="">
+
+                            <div class="chars-card__body">
+                                <h3 class="chars-card__title">Самодиагностика</h3>
+                                <p class="chars-card__text">Система проверяет работу оборудования <br> и выводит результаты на дисплей</p>
+                            </div>
+                        </article>
+
+                        <article class="chars-card chars-card--second">
+                            <img class="chars-card__icon" src="assets/icons/chars-dots.svg" alt="">
+
+                            <div class="chars-card__body">
+                                <h3 class="chars-card__title">Безопасность</h3>
+                                <p class="chars-card__text">Важные компоненты снабжены <br> аварийными выключателями</p>
+                            </div>
+                        </article>
+
+                        <article class="chars-card chars-card--third">
+                            <img class="chars-card__icon" src="assets/icons/chars-dots.svg" alt="">
+
+                            <div class="chars-card__body">
+                                <h3 class="chars-card__title">Изящность</h3>
+                                <p class="chars-card__text">Приводную шестерню легко заменить, а приводная <br> цепь сделана из особо прочного материала</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="adv" id="advantages">
+        <div class="adv__top">
+            <div class="container adv__head" data-aos="fade-up">
+                <h2 class="adv__heading">Почему наши заказчики выбирают LIFT MASTER</h2>
+
+                <div class="adv__nav">
+                    <button class="stats__nav-btn adv__nav-btn adv__nav-btn--prev" type="button" aria-label="Предыдущий слайд">
+                        <span class="stats__nav-icon"></span>
+                    </button>
+                    <button class="stats__nav-btn adv__nav-btn adv__nav-btn--next" type="button" aria-label="Следующий слайд">
+                        <span class="stats__nav-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="adv__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide adv-card">
+                        <div class="adv-card__inner">
+                            <img class="adv-card__icon" src="assets/icons/public-escalators-adv-1.svg" alt="" width="18" height="22">
+                            <h3 class="adv-card__title">Автоматическая смазка</h3>
+                            <p class="adv-card__text">Механизмы эскалатора смазываются автоматически: система сама наносит нужное количество вещества.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide adv-card">
+                        <div class="adv-card__inner">
+                            <img class="adv-card__icon" src="assets/icons/public-escalators-adv-1.svg" alt="" width="18" height="22">
+                            <h3 class="adv-card__title">Режим инспекции</h3>
+                            <p class="adv-card__text">В этом режиме эскалатор перемещается медленно, чтобы оборудование было удобно осматривать и ремонтировать. В этом режиме все предохранители находятся в рабочем состоянии.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide adv-card">
+                        <div class="adv-card__inner">
+                            <img class="adv-card__icon" src="assets/icons/public-escalators-adv-1.svg" alt="" width="18" height="22">
+                            <h3 class="adv-card__title">Экономия энергии</h3>
+                            <p class="adv-card__text">Эскалатор движется со скоростью 0,2 м/с, если некоторое время не перевозит пассажиров. Когда поступает сигнал о появлении пассажиров, скорость вырастает до 0,5 м/с – это экономит энергию на 40-60% и уменьшает амплитуду тока на 50-80%.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide adv-card">
+                        <div class="adv-card__inner">
+                            <img class="adv-card__icon" src="assets/icons/public-escalators-adv-1.svg" alt="" width="18" height="22">
+                            <h3 class="adv-card__title">Экономия энергии</h3>
+                            <p class="adv-card__text">Эскалатор движется со скоростью 0,2 м/с, если некоторое время не перевозит пассажиров. Когда поступает сигнал о появлении пассажиров, скорость вырастает до 0,5 м/с – это экономит энергию на 40-60% и уменьшает амплитуду тока на 50-80%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Below 769px the section background is dropped and the same shot
+             comes back here, in the flow, between the two blocks. -->
+        <picture class="adv__photo">
+            <img src="assets/img/escalators-advantages.webp" alt="" loading="lazy">
+        </picture>
+
+        <div class="container adv__bottom" data-aos="fade-up">
+            <div class="adv__info">
+                <h3 class="adv__info-title">Безопасность для пассажиров <br> и механизма</h3>
+
+                <div class="adv__info-text">
+                    <p>У публичных эскалаторов квадратная ферма: благодаря этому такой эскалатор выдерживает более серьезные нагрузки, более устойчив, а его разрывные характеристики улучшены. Эскалатор снабжен двойным мотором и двойными тормозами.</p>
+
+                    <p>Поручни проходят антистатическую обработку, чтобы пассажиров не било током. Если одна из ступеней будет повреждена, сработает специальный датчик и эскалатор остановится.</p>
+                </div>
+
+                <a class="btn-arrow adv__info-btn" href="lifts.html">
+                    В каталог
+                    <span class="btn-arrow__icon">
+                        <img src="assets/icons/header-link-arrow.svg" alt="" width="8" height="8">
+                    </span>
+                </a>
+            </div>
+
+            <div class="adv__gallery">
+                <div class="adv__gallery-media">
+                    <div class="adv__gallery-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="adv__gallery-img" src="assets/img/public-escalators-slider-1.webp" alt="Публичный эскалатор" width="338" height="458" loading="lazy">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="adv__gallery-img" src="assets/img/public-escalators-slider-1.webp" alt="Публичный эскалатор" width="338" height="458" loading="lazy">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="adv__gallery-img" src="assets/img/public-escalators-slider-1.webp" alt="Публичный эскалатор" width="338" height="458" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="stats__nav-btn adv__gallery-btn adv__gallery-btn--prev" type="button" aria-label="Предыдущее фото">
+                        <span class="stats__nav-icon"></span>
+                    </button>
+                    <button class="stats__nav-btn adv__gallery-btn adv__gallery-btn--next" type="button" aria-label="Следующее фото">
+                        <span class="stats__nav-icon"></span>
+                    </button>
+                </div>
+
+                <div class="adv__gallery-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="contacts">
+        <div class="cta__inner">
+            <span class="cta__glass" aria-hidden="true"></span>
+
+            <div class="cta__top">
+                <img class="cta__logo" src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18">
+                <span class="cta__label">Начните проект</span>
+            </div>
+
+            <div class="cta__middle">
+                <div class="cta__middle-row">
+                    <span class="cta__note">Отправьте информацию о вашем проекте.</span>
+
+                    <p class="cta__desc">Наш специалист свяжется с вами, чтобы обсудить подбор оборудования, технические характеристики, документацию и условия доставки.</p>
+                </div>
+
+                <span class="cta__line"></span>
+            </div>
+
+            <div class="cta__bottom">
+                <h2 class="cta__title">Начните проект вместе с LIFT MASTER</h2>
+
+                <button class="header__btn btn--light cta__btn" data-popup-open="modal">Отправить заявку</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__content">
+            <div class="footer__nav">
+                <div class="footer__nav-col">
+                    <div class="footer__nav-group">
+                        <span class="footer__nav-title">Навигация</span>
+
+                        <div class="footer__nav-links">
+                            <a class="footer__nav-link" href="index.html">Главная</a>
+                            <a class="footer__nav-link" href="about-us.html">О компании</a>
+                            <a class="footer__nav-link" href="news.html">Новости</a>
+                            <a class="footer__nav-link" href="contact.html">Контакты</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__nav-group">
+                        <span class="footer__nav-title">Лифты</span>
+
+                        <div class="footer__nav-links">
+                            <a class="footer__nav-link" href="passenger-lifts.html">Пассажирские</a>
+                            <a class="footer__nav-link" href="mrl-passenger-lifts.html">Без машинного помещения</a>
+                            <a class="footer__nav-link" href="panoramic-lifts.html">Панорамные</a>
+                            <a class="footer__nav-link" href="home-lifts.html">Коттеджные</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__nav-col">
+                    <div class="footer__nav-group">
+                        <span class="footer__nav-title">Эскалаторы и движущиеся дорожки</span>
+
+                        <div class="footer__nav-links">
+                            <a class="footer__nav-link" href="escalators.html">Эскалаторы</a>
+                            <a class="footer__nav-link" href="public-escalators.html">Публичные эскалаторы</a>
+                            <a class="footer__nav-link" href="travelators.html">Траволаторы</a>
+                            <a class="footer__nav-link" href="lifts.html">Каталог оборудования</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__nav-group footer__nav-group--right">
+                        <span class="footer__nav-title">Контакты</span>
+
+                        <div class="footer__nav-links">
+                            <a class="footer__nav-link" href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+                            <a class="footer__nav-link" href="https://t.me" target="_blank" rel="noopener">Telegram</a>
+                            <a class="footer__nav-link" href="https://wa.me/77000000000" target="_blank" rel="noopener">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="footer__divider"></span>
+
+            <div class="footer__bottom">
+                <button class="footer__scroll-top" type="button" aria-label="Наверх">
+                    <img src="assets/icons/footer-to-top-srrow.svg" alt="" width="12" height="14">
+                </button>
+
+                <div class="footer__email-info">
+                    <div class="footer__email-label-wrapper">
+                        <span class="footer__email-label">Почта</span>
+                        <img src="assets/img/footer-label-decor.svg" alt="" width="10" height="10">
+                    </div>
+
+                    <a class="footer__email" href="mailto:support@liftmaster.kz">support@liftmaster.kz</a>
+                </div>
+            </div>
+
+            <div class="footer__legal">
+                <a class="footer__dev" href="https://fernandes.media" target="_blank" rel="noopener">
+                    <img src="assets/icons/dev-logo.svg" alt="Fernandes Media — website development" width="102" height="42">
+                </a>
+
+                <a class="footer__legal-link" href="#privacy">Политика конфиденциальности</a>
+                <span>Все права защищены</span>
+                <span>© 2026</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Nav Menu -->
+<div class="nav-menu" id="nav-menu">
+  <picture>
+    <source media="(max-width: 570px)" srcset="assets/img/menu-bg-mob.jpg">
+    <img class="nav-menu__bg" src="assets/img/menu-bg.jpg" alt="">
+  </picture>
+  <img class="nav-menu__brand" src="assets/img/menu-brand.svg" alt="">
+  <div class="nav-menu__inner" data-lenis-prevent>
+
+    <div class="nav-menu__top">
+        <div class="header__left">
+            <a class="header__logo" href="index.html">
+                <img src="assets/icons/logo.svg" alt="Lift Master" width="146" height="18">
+            </a>
+            <span class="header__tagline">вертикальный транспорт любого уровня</span>
+        </div>
+      <button class="nav-menu__close" id="nav-menu-close" aria-label="Close menu">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.51216 18C1.12479 18 0.73743 17.853 0.443122 17.5565C-0.147707 16.9657 -0.147707 16.0078 0.443122 15.417L15.417 0.443113C16.0082 -0.147704 16.966 -0.147704 17.5569 0.443113C18.1477 1.03393 18.1477 1.99179 17.5569 2.58298L2.58266 17.5565C2.2843 17.853 1.8973 18 1.51216 18Z" fill="white"/>
+          <path d="M16.4857 18C16.0987 18 15.7114 17.853 15.4171 17.5565L0.443395 2.58317C-0.147798 1.99229 -0.147798 1.03432 0.443395 0.443438C1.03422 -0.147813 1.99209 -0.147813 2.58292 0.443438L17.5566 15.4186C18.1478 16.0095 18.1478 16.9674 17.5566 17.5583C17.2605 17.853 16.8731 18 16.4857 18Z" fill="white"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="nav-menu__nav">
+      <a href="index.html" class="nav-menu__item">
+        <span class="nav-menu__num">01</span>
+        <span class="nav-menu__item-right">
+          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
+          <span class="nav-menu__item-text">Главная</span>
+        </span>
+      </a>
+      <a href="lifts.html" class="nav-menu__item">
+        <span class="nav-menu__num">02</span>
+        <span class="nav-menu__item-right">
+          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
+          <span class="nav-menu__item-text">Лифты</span>
+        </span>
+      </a>
+      <a href="escalators.html" class="nav-menu__item">
+        <span class="nav-menu__num">03</span>
+        <span class="nav-menu__item-right">
+          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
+          <span class="nav-menu__item-text">Эскалаторы</span>
+        </span>
+      </a>
+      <a href="travelators.html" class="nav-menu__item">
+        <span class="nav-menu__num">04</span>
+        <span class="nav-menu__item-right">
+          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
+          <span class="nav-menu__item-text">Траволаторы</span>
+        </span>
+      </a>
+      <a href="news.html" class="nav-menu__item">
+        <span class="nav-menu__num">05</span>
+        <span class="nav-menu__item-right">
+          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
+          <span class="nav-menu__item-text">Новости</span>
+        </span>
+      </a>
+      <a href="contact.html" class="nav-menu__item">
+        <span class="nav-menu__num">06</span>
+        <span class="nav-menu__item-right">
+          <svg class="nav-menu__item-arrow" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.4764 15.7055L0.190557 15.7775L2.03154e-05 12.1943L22.2845 12.1211L11.9537 2.54236L14.4082 -5.71818e-05L29.3903 13.8913L15.8904 27.8746L13.1664 25.3489L22.4764 15.7055Z" fill="white"/></svg>
+          <span class="nav-menu__item-text">Контакты</span>
+        </span>
+      </a>
+    </nav>
+
+    <div class="nav-menu__bottom">
+      <div class="nav-menu__lang">
+        <button class="nav-menu__lang-btn nav-menu__lang-btn--active">En</button>
+        <span class="nav-menu__lang-sep"></span>
+        <button class="nav-menu__lang-btn">Ru</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal" data-popup data-lenis-prevent>
+  <div class="modal">
+    <button class="modal__close" id="modal-close" data-popup-close aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.30213 15.5C0.968571 15.5 0.635009 15.3734 0.381578 15.1181C-0.127193 14.6094 -0.127193 13.7845 0.381578 13.2758L13.2757 0.38157C13.7848 -0.12719 14.6097 -0.12719 15.1184 0.38157C15.6272 0.890329 15.6272 1.71516 15.1184 2.22423L2.22396 15.1181C1.96703 15.3734 1.63379 15.5 1.30213 15.5Z" fill="#7B7B7B"/>
+        <path d="M14.1961 15.5C13.8628 15.5 13.5293 15.3734 13.2758 15.1181L0.381812 2.22439C-0.127271 1.71558 -0.127271 0.890664 0.381812 0.381849C0.890577 -0.127283 1.71541 -0.127283 2.22418 0.381849L15.1182 13.2771C15.6273 13.7859 15.6273 14.6108 15.1182 15.1197C14.8632 15.3734 14.5296 15.5 14.1961 15.5Z" fill="#7B7B7B"/>
+      </svg>
+    </button>
+    <div class="modal__body" id="modal-body">
+      <h2 class="modal__title">Оставьте заявку на консультацию</h2>
+      <form class="modal__form" id="modal-form">
+        <div class="modal__row">
+          <input class="modal__input" type="text" placeholder="Name">
+          <input class="modal__input" type="tel" placeholder="+1 (000)-000-00-00">
+        </div>
+        <input class="modal__input modal__input--full" type="email" placeholder="example@mail.com">
+
+        <label class="modal__check">
+          <input class="modal__check-input" type="checkbox" required>
+          <span class="modal__check-box"></span>
+          <span class="modal__check-text">Я согласен на обработку персональных данных и на получение рассылки</span>
+        </label>
+
+        <button class="modal__btn" type="submit">
+           Оставить заявку
+          <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="19.5" cy="19.5" r="19.5" fill="#fff"/>
+            <path d="M23.0027 17.845L15.4716 25.0175L14.2344 23.8392L21.7646 16.6667H15.1278V15H24.7527V24.1667H23.0027V17.845Z" fill="#000"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="modal__success" id="modal-success">
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="17.5" cy="17.5" r="17.5" fill="#402413" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5072 15.1135C24.827 14.767 25.0039 14.3029 24.9999 13.8212C24.9959 13.3395 24.8113 12.8787 24.4859 12.5381C24.1604 12.1975 23.7201 12.0043 23.2599 12.0001C22.7996 11.9959 22.3562 12.1811 22.0251 12.5157L16.2446 18.5655L13.9749 16.19C13.6438 15.8554 13.2004 15.6702 12.7401 15.6744C12.2799 15.6786 11.8396 15.8718 11.5141 16.2124C11.1887 16.553 11.0041 17.0138 11.0001 17.4955C10.9961 17.9772 11.173 18.4413 11.4928 18.7878L15.0035 22.4621C15.3327 22.8065 15.7791 23 16.2446 23C16.7101 23 17.1565 22.8065 17.4857 22.4621L24.5072 15.1135Z" fill="#EDF2F2" />
+        </svg>
+      <p class="modal__success-text">Ваша заявка была успешно получена</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/accordion-js@3.3.4/dist/accordion.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

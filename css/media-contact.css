@@ -1,0 +1,305 @@
+/* ==========================================================================
+   Contact — breakpoints
+   ==========================================================================
+   Moved over from contact.css; blocks that shared a breakpoint are merged,
+   and the breakpoints run widest first so the cascade order holds. */
+
+@media (max-width: 1919px) {
+    .hero {
+        padding: 0 0px 40px;
+    }
+
+    .contact__input,
+    .contact__select-trigger {
+        height: 39px;
+        font-size: 13px;
+    }
+
+    .contact__fields {
+        column-gap: 14px;
+        row-gap: 12px;
+    }
+
+    .contact__submit {
+        font-size: 12px;
+        margin-top: 14px;
+        padding: 13px 21px 13px 24px;
+    }
+
+    .contact__submit img {
+        width: 12px;
+        height: auto;
+    }
+
+    .contact__select-option {
+        font-size: 13px;
+    }
+
+    .footer__contact-item {
+        gap: 11px;
+    }
+
+    .footer__contact-label {
+        font-size: 15px;
+        gap: 8px;
+    }
+
+    .footer__contact-label img {
+        width: 14px;
+        height: auto;
+    }
+
+    .footer__contact-value {
+        font-size: 26px;
+    }
+
+    .footer__mid-right {
+        gap: 30px;
+    }
+
+    .footer__socials {
+        gap: 37px;
+    }
+
+    .footer__social {
+        font-size: 18px;
+        gap: 7px;
+    }
+
+    .footer__social img {
+        width: 16px;
+        height: auto;
+    }
+
+    .hero--contact {
+        padding-top: 300px;
+    }
+
+    .co-hero__eyebrow {
+        font-size: 16px;
+    }
+
+    .co-hero__title {
+        font-size: 165px;
+        line-height: 90%;
+    }
+
+    .co-form {
+        gap: 15px;
+    }
+
+    .co-form__left {
+        width: 350px;
+    }
+
+    .co-form__message {
+        width: 365px;
+        min-height: 135px;
+        padding: 14px 16px;
+        font-size: 13px;
+    }
+
+    .co-contacts {
+        gap: 98px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .co-form__message {
+        width: 245px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .hero__bottom--contact {
+        align-items: flex-start;
+    }
+
+    .co-contacts {
+        align-self: flex-end;
+        gap: 50px;
+    }
+
+    .hero--contact {
+        padding-top: 200px;
+    }
+
+    .co-hero__title {
+        font-size: 100px;
+    }
+
+    .co-hero__intro {
+        margin-bottom: 40px;
+    }
+
+    .co-form__message {
+        width: 300px;
+    }
+
+    
+}
+
+@media (max-width: 769px) {
+    .contact__fields {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__mid-right {
+        align-self: end;
+    }
+
+    .co-form__message,
+    .co-form {
+        width: 100%;
+    }
+
+    .co-form__left {
+        width: 50%;
+    }
+
+    .co-hero__title {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 570px) {
+    .hero {
+        padding: 0 0 35px;
+    }
+
+    .contact__input,
+    .contact__select-trigger {
+        max-width: 224px;
+        height: 52px;
+        padding: 0 12px 0 16px;
+    }
+
+    .contact__fields {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .contact__select {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact__submit {
+        max-width: 224px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        margin-top: 10px;
+        padding-right: 12px;
+    }
+
+    .footer__contact-label {
+        font-size: 14px;
+        gap: 14px;
+    }
+
+    .footer__contact-label img {
+        width: 15px;
+        height: auto;
+    }
+
+    .footer__contact-item {
+        gap: 7px;
+    }
+
+    .footer__contact-value {
+        font-size: 25px;
+    }
+
+    .footer__mid-right {
+        gap: 25px;
+    }
+
+    .footer__social {
+        font-size: 21px;
+        gap: 10px;
+    }
+
+    .footer__social img {
+        width: 21px;
+        height: auto;
+    }
+
+    .footer__socials {
+        gap: 30px;
+        row-gap: 23px;
+        flex-wrap: wrap;
+        justify-content: end;
+        padding-top: 40px;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .hero--contact {
+        padding-top: 160px;
+        min-height: 0px;
+    }
+
+    .co-hero__eyebrow {
+        padding-left: 0px;
+        font-size: 14px;
+    }
+
+    .co-hero__title {
+        font-size: 70px;
+    }
+
+    .co-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        width: 100%;
+    }
+
+    .co-form__left {
+        display: contents;
+    }
+
+    .co-form__left .contact__fields {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        order: 1;
+        width: 100%;
+    }
+
+    .co-form__left .contact__input,
+    .co-form__left .contact__select-trigger {
+        max-width: 100%;
+    }
+
+    .co-form__left .contact__fields > :nth-child(n + 3) {
+        grid-column: 1 / -1;
+    }
+
+    .co-form__message {
+        order: 2;
+        width: 100%;
+        min-height: 148px;
+    }
+
+    .co-form__left .contact__submit {
+        order: 3;
+        margin-top: 0;
+        max-width: 100%;
+        align-self: flex-start;
+    }
+
+    .hero__bottom--contact {
+        gap: 45px;
+    }
+
+    .co-contacts {
+        gap: 33px;
+    }
+
+    .co-hero__intro {
+        margin-bottom: 350px;
+    }
+}

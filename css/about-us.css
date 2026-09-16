@@ -1,0 +1,442 @@
+/* ==========================================================================
+   About — hero
+   ==========================================================================
+   The slide layer, the scrim and the height come from .hero in style.css;
+   what follows is only the content, pinned to the bottom of the screen. */
+.about-hero__container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 48px;
+}
+
+/* Runs from the very left edge of the screen — it sits outside the container
+   on purpose — and stops at the container padding on the right, where it ends
+   in a short thick cap. */
+.about-hero__line {
+    position: relative;
+    height: 1px;
+    margin-right: 56px;
+    margin-bottom: 38px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.about-hero__line::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    width: 63px;
+    height: 6px;
+    background-color: #FFF;
+}
+
+.about-hero__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-hero__left {
+    display: flex;
+    align-items: end;
+    gap: 67px;
+}
+
+.about-hero__title {
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.about-hero__text {
+    max-width: 283px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 169%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.btn-arrow  {
+    gap: 50px;
+}
+
+/* work */
+.work {
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+/* The glow runs on into the section below instead of being cut at the section
+   edge. z-index lifts it over that section's background, while its content
+   (.annual__inner, z-index 1 and later in the document) stays on top.
+   The box is bounded left/right and the svg is drawn as an oversized
+   background — a 1676px box with overflow visible would widen the page. */
+.about-page .work {
+    z-index: 1;
+    overflow: visible;
+}
+
+.about-page .work::after {
+    display: none;
+}
+
+.work-card--text--first .work-card__title, .work-card__bottom-info {
+    max-width: 450px;
+}
+
+.work-card__info, .work-card__bottom-info {
+    color: rgba(255, 255, 255, 0.6);
+}
+/* ==========================================================================
+   About — annual figures
+   ========================================================================== */
+.annual {
+    position: relative;
+    padding-bottom: 120px;
+    padding-right: 50px;
+    background-color: #000;
+    color: #FFF;
+    min-height: 1800px;
+    overflow: hidden;
+}
+
+/* The bottom of the shot fades into the black of the section. It sits above
+   the photo but below the content, which is lifted by .annual__inner. */
+.annual::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 320px;
+    background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+}
+
+/* The lift shot keeps its own size, centred and 225px down from the top of
+   the section; max-width lets it shrink instead of widening the page. */
+/* <picture> wrapper: the styles stay on it, the <img> just fills it so the
+   570px source can swap in without touching the layout. */
+.annual__bg img {
+    width: 100%;
+    height: auto;
+}
+
+.annual__bg {
+    position: absolute;
+    top: 325px;
+    left: 50%;
+    width: 1710px;
+    max-width: 100%;
+    height: auto;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.annual__inner {
+    position: relative;
+    z-index: 1;
+}
+
+.annual__btn {
+    gap: 35px;
+}
+
+.annual__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.annual__title {
+    max-width: 995px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 93%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.annual__aside {
+    flex-shrink: 0;
+}
+
+.annual__logo {
+    width: 246px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.annual__text {
+    max-width: 242px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.annual__bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 196px;
+}
+
+.annual__about-title {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 102%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.annual__about {
+    /* the stats column asks for the full width, so without this the about
+       block gets squeezed below its own 228px */
+    flex-shrink: 0;
+    width: 228px;
+    margin-right: 18px;
+}
+
+.annual__about-text {
+    max-width: 228px;
+}
+
+/* Stats ------------------------------------------------------------------
+   Every row is a pill with a dashed rule underneath it. Both the indent of the
+   row and the length of the rule come from the markup as UNITLESS numbers
+   (--indent / --line) — a length there would make the calc() invalid, since a
+   length cannot be multiplied by a percentage. They are read as a share of the
+   1808px content width, so the whole staircase scales with the section. */
+.annual__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    /* takes whatever is left next to the about block, and may shrink */
+    flex: 1;
+    min-width: 0;
+}
+
+/* The row is shifted with translateX rather than margin-left on purpose: a
+   margin would narrow the row, and the rule inside it is sized in percent —
+   those percentages would then resolve against the narrowed row and come out
+   short. Translating keeps the row full width, so the rule keeps its length. */
+.annual-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    width: 100%;
+    transform: translateX(calc(var(--indent) / 1808 * 100%));
+}
+
+.annual-stat__pill {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 38px;
+    padding: 11px 50px 11px 13px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 51px;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    background: rgba(255, 255, 255, 0.02);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.annual-stat__plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    /* Same fill as the source svg: the gradient vector there runs 121.72px on
+       a 53px circle, so the end stop sits at 229.7% — that keeps the visible
+       part of the ramp identical however large the circle is drawn. */
+    background: linear-gradient(180deg, #FF8011 0%, #A1D78B 229.7%);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 485%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #fff;
+}
+
+.annual-stat__line {
+    width: calc(var(--line) / 1808 * 100%);
+    border-top: 1px dashed rgba(255, 255, 255, 0.4);
+}
+
+/* transition */
+.transition-card__btn {
+    padding-left: 20px;
+    padding-right: 25px;
+    gap: 10px;
+}
+
+/* cta */
+.cta__inner {
+    background: url(../assets/img/about-cta-bg.jpg) no-repeat center / cover;
+}
+
+.cta__inner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(to top, rgba(0, 0, 0, .55) 0%, rgba(0, 0, 0, .28) 45%, rgba(0, 0, 0, .2) 100%);
+    pointer-events: none;
+}
+/* ==========================================================================
+   About — certificates
+   ==========================================================================
+   Two columns of the same height: the left one spreads its own content with
+   space-between, so the paragraph and the button stay level with the bottom
+   of the certificate next to them however tall that is. */
+.cert {
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 210px;
+    color: #FFF;
+}
+
+/* The glow is drawn as an oversized background inside a box that is bounded
+   left and right — a 1579px wide element would widen the page. It hangs 260px
+   past the bottom of the section so it carries on into the CTA below, which
+   is why .about-page .cta drops its own black fill. */
+.cert::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: -260px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url(../assets/img/certificate-bg.svg) no-repeat left center / 1579px 2014px;
+    pointer-events: none;
+}
+
+.about-page .cta {
+    background-color: transparent;
+}
+
+.cert__inner {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.cert__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Nav ---------------------------------------------------------------------
+   Square buttons with the arrow masked in currentColor: white on black while
+   the slider can move that way, grey with a white arrow once it cannot. */
+.cert__nav {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    margin-bottom: 57px;
+}
+
+.cert__nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 3px;
+    background-color: #FFF;
+    color: #000;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.cert__nav-btn.swiper-button-disabled {
+    background-color: #4f4f4f;
+    color: #FFF;
+    cursor: default;
+}
+
+.stats__nav-icon {
+    width: 10px;
+    height: 10px;
+}
+
+.cert__nav-btn--next .stats__nav-icon {
+    transform: rotate(180deg);
+}
+
+.cert__label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.cert__title {
+    max-width: 757px;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 106%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.cert__text {
+    max-width: 536px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 231%;
+    letter-spacing: -0.03em;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.cert__btn {
+    align-self: flex-start;
+    gap: 30px;
+}
+
+.cert__slider {
+    flex-shrink: 0;
+    width: 682px;
+    overflow: hidden;
+}
+
+.cert__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

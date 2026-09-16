@@ -1,0 +1,522 @@
+/* ==========================================================================
+   About — ≤1919px, the same 0.75 scale the rest of the site uses
+   ==========================================================================
+   Generated from about-us.css: every px value multiplied by 0.75. Percentages,
+   em values and hairlines (1px and under) stay as they are, and so do the
+   calc() sizes of the stats staircase — those are already a share of the
+   content width and would break if scaled again. */
+@media (max-width: 1919px) {
+    .about-hero__container {
+        padding-bottom: 36px;
+    }
+
+    .about-hero__line {
+        margin-right: 42px;
+        margin-bottom: 28.5px;
+    }
+
+    .about-hero__line::after {
+        width: 47.25px;
+        height: 4.5px;
+    }
+
+    .about-hero__bottom {
+        gap: 30px;
+    }
+
+    .about-hero__left {
+        gap: 50.25px;
+    }
+
+    .about-hero__title {
+        font-size: 60px;
+    }
+
+    .about-hero__text {
+        max-width: 212.25px;
+        font-size: 12px;
+    }
+
+    .btn-arrow {
+        gap: 37.5px;
+    }
+
+    .work {
+        padding-top: 112.5px;
+        padding-bottom: 150px;
+    }
+
+    .work-card--text--first .work-card__title,
+    .work-card__bottom-info {
+        max-width: 337.5px;
+    }
+
+    .annual {
+        padding-bottom: 90px;
+        padding-right: 37.5px;
+        min-height: 1170px;
+    }
+
+    .annual::after {
+        height: 300px;
+    }
+
+    .annual__bg {
+        top: 143.75px;
+        width: 1282.5px;
+    }
+
+    .annual__btn {
+        gap: 26.25px;
+    }
+
+    .annual__top {
+        gap: 30px;
+    }
+
+    .annual__title {
+        max-width: 746.25px;
+        margin-bottom: 30px;
+        font-size: 41.25px;
+    }
+
+    .annual__logo {
+        width: 184.5px;
+        margin-bottom: 22.5px;
+    }
+
+    .annual__text {
+        max-width: 181.5px;
+        font-size: 12px;
+    }
+
+    .annual__bottom {
+        gap: 30px;
+        margin-top: 147px;
+    }
+
+    .annual__about-title {
+        margin-bottom: 22.5px;
+        font-size: 30px;
+    }
+
+    .annual__about {
+        width: 171px;
+        margin-right: 13.5px;
+    }
+
+    .annual__about-text {
+        max-width: 171px;
+    }
+
+    .annual__stats {
+        gap: 26.25px;
+    }
+
+    .annual-stat {
+        gap: 26.25px;
+    }
+
+    .annual-stat__pill {
+        gap: 28.5px;
+        padding: 8.25px 37.5px 8.25px 9.75px;
+        border-radius: 38.25px;
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        font-size: 15px;
+    }
+
+    .annual-stat__plus {
+        width: 39.75px;
+        height: 39.75px;
+        font-size: 15px;
+    }
+
+    .transition-card__btn {
+        padding-left: 15px;
+        padding-right: 18.75px;
+        gap: 7.5px;
+    }
+
+    /* certificates */
+    .cert {
+        padding-top: 40px;
+        padding-bottom: 127.5px;
+    }
+
+    .cert::before {
+        bottom: -195px;
+        background-size: 1184.25px 1510.5px;
+    }
+
+    .cert__inner {
+        gap: 30px;
+    }
+
+    .cert__nav {
+        gap: 54px;
+        margin-bottom: 42.75px;
+    }
+
+    .cert__nav-btn {
+        width: 34.5px;
+        height: 34.5px;
+        border-radius: 2.25px;
+    }
+
+    .cert__label {
+        font-size: 12px;
+    }
+
+    .cert__title {
+        max-width: 500px;
+        font-size: 45px;
+    }
+
+    .cert__text {
+        max-width: 402px;
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+
+    .cert__slider {
+        width: 511.5px;
+    }
+
+    .cert__img {
+        border-radius: 9px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .annual__bg {
+        width: 1000px;
+    }
+
+    .annual__bottom {
+        flex-direction: column-reverse;
+    }
+
+    .annual__stats {
+        width: 100%;
+    }
+
+    .work::before {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1025px) {
+    .about-hero__bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .about-hero__left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cert__inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cert__left {
+        width: 100%;
+        gap: 30px;
+        flex: none;
+    }
+
+    .cert__title, .cert__text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .cert__bottom, .cert__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cert__btn {
+        align-self: center;
+    }
+}
+
+/* ==========================================================================
+   HAND-WRITTEN BELOW — keep this part when media-about-us.css is regenerated
+   ========================================================================== */
+@media (max-width: 769px) {
+    /* One column: title, button, logo, text, the lift shot, the stats row and
+       finally the about block. display: contents dissolves the wrappers so all
+       of those become flex children of the section and can be reordered —
+       the photo has to sit between the text and the stats. */
+    .annual {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        min-height: 0;
+        padding: 60px 0 80px;
+    }
+
+    .annual__inner,
+    .annual__top,
+    .annual__bottom {
+        display: contents;
+    }
+
+    .annual__top-left { order: 1; }
+    .annual__aside    { order: 2; }
+    .annual__bg       { order: 3; }
+    .annual__stats    { order: 4; }
+    .annual__about    { order: 5; }
+
+    /* the container padding lived on the wrapper that just dissolved */
+    .annual__top-left,
+    .annual__aside,
+    .annual__about {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* back into the flow, full width */
+    .annual__bg {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        transform: none;
+    }
+
+    .annual__title,
+    .annual__text,
+    .annual__about,
+    .annual__about-text {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .annual__about {
+        margin-right: 0;
+    }
+
+    /* Stats turn into one horizontal strip you can swipe. The dashed rule is
+       moved onto the strip itself: per-item rules would break apart at every
+       gap, while a border on the scroller stays put and reads as one line. */
+    .annual__stats {
+        flex-direction: row;
+        flex: none;
+        gap: 10px;
+        padding: 0 20px 35px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        overscroll-behavior-x: contain;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
+    }
+
+    .annual-stat {
+        width: auto;
+        flex-shrink: 0;
+        transform: none;
+    }
+
+    .annual-stat__line {
+        display: none;
+    }
+
+    .annual::after {
+        display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .about-hero__line {
+        margin-bottom: 90px;
+    }
+
+    .about-hero__title {
+        font-size: 45px;
+        line-height: 82%;
+    }
+
+    .about-hero__left {
+        gap: 15px;
+    }
+
+    .about-hero__text {
+        font-size: 18px;
+        line-height: 144%;
+        max-width: 320px;
+    }
+
+    .btn-arrow {
+        font-size: 16px;
+        padding: 4px 4px 4px 35px;
+        gap: 65px;
+    }
+
+    .btn-arrow__icon {
+        width: 54px;
+        height: 54px;
+    }
+
+    .btn-arrow__icon img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .work__title {
+        font-size: 30px;
+        line-height: 117%;
+        max-width: 100%;
+        text-align: left;
+    }
+
+        .work::before {
+            height: 100%;
+        }
+
+    .work__title-accent {
+        color: #fff;
+    }
+
+    .about-page .work {
+        padding-bottom: 120px;
+    }
+
+    /* .annual */
+    .annual {
+        padding-top: 0px;
+        gap: 70px;
+        padding-bottom: 100px;
+    }
+
+    .annual__title {
+        font-size: 23px;
+        line-height: 122%;
+        max-width: 280px;
+        margin-bottom: 50px;
+    }
+
+    .annual__aside {
+        margin-top: 30px;
+    }
+
+    .annual__logo {
+        width: 246px;
+        margin-bottom: 30px;
+    }
+
+    .annual__text {
+        font-size: 16px;
+        line-height: 175%;
+    }
+
+    .annual-stat__pill {
+        padding: 11px 45px 11px 13px;
+        font-size: 20px;
+        gap: 37px;
+    }
+
+    .annual-stat__plus {
+        width: 53px;
+        height: 53px;
+        font-size: 20px;
+    }
+
+    .annual__about-title {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    /* .transition */
+    .transition__title {
+        font-size: 30px;
+        max-width: 120px;
+        line-height: 100%;
+    }
+
+    .transition__head .work__title-accent {
+        color: rgba(255, 255, 255, 0.45);
+    }
+
+    .transition {
+        padding-bottom: 125px;
+    }
+
+    .transition-card__btn {
+        padding: 20px;
+        padding-left: 20px;
+        padding-right: 25px;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .transition-card__btn img {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* one card per screen: the width minus both 20px slider offsets */
+    .transition-card {
+        width: calc(100vw - 40px);
+    }
+
+    /* .cert */
+    .cert {
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+
+    .cert__nav {
+        gap: 0;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+
+    .cert__label {
+        font-size: 14px;
+    } 
+
+    .cert::before {
+        bottom: 500px;
+    }
+
+    .cert__nav-btn {
+        width: 46px;
+        height: 46px;
+        border-radius: 3px;
+    }
+
+    .cert__title {
+        text-align: left;
+        font-size: 35px;
+        line-height: 100%;
+    }
+
+    .cert__text {
+        text-align: left;
+        font-size: 16px;
+        margin-bottom: 60px;
+        line-height: 175%;
+    }
+
+    .cert__btn {
+        align-self: flex-start;
+        gap: 92px;
+    }
+
+    .cert__inner {
+        gap: 70px;
+    }
+
+    /* One certificate per screen: the slider stays inside the container, so
+       each slide keeps the 20px the container holds off both edges and Swiper
+       sizes it to whatever is left. */
+    .cert__slider {
+        width: 100%;
+        max-width: none;
+    }
+}

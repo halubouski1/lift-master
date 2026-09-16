@@ -1,0 +1,315 @@
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    min-height: var(--fixed-vh, 100vh);
+    padding: 0 33px 55px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 38%, rgba(0, 0, 0, 0.4) 100% );
+}
+
+.hero__bottom {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.contact__fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 15px;
+}
+
+.contact__input,
+.contact__select-trigger {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 52px;
+    padding: 0 12px 0 22px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    background: rgba(255, 255, 255, 0.02);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: #fff;
+    transition: border-color 0.25s ease;
+}
+
+.contact__input::placeholder {
+    color: #fff;
+}
+
+.contact__input:focus,
+.contact__select-trigger:focus-visible {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.contact__select {
+    position: relative;
+}
+
+.contact__select-trigger {
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.contact__select-value {
+    color: #fff;
+    transition: color 0.2s ease;
+}
+
+.contact__select.is-filled .contact__select-value {
+    color: #fff;
+}
+
+.contact__select-chevron {
+    flex-shrink: 0;
+    width: 7px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.contact__select.is-open .contact__select-chevron {
+    transform: rotate(180deg);
+}
+
+.contact__select-list {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(28, 21, 15, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+}
+
+.contact__select.is-open .contact__select-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.contact__select-option {
+    padding: 11px 14px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.contact__select-option:hover,
+.contact__select-option.is-selected {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.contact__submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+    padding: 18px 28px 18px 32px;
+    border-radius: 6px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #000;
+    transition: background-color 0.25s ease;
+}
+
+.contact__submit:hover {
+    background-color: #ece7df;
+}
+
+.contact__submit img {
+    width: 16px;
+    height: 16px;
+}
+
+.footer__mid-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.footer__contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 14px;
+}
+
+.footer__contact-label {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: rgba(221, 221, 221, 0.65);
+}
+
+.footer__contact-value {
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 109%;
+    text-align: right;
+    color: rgba(221, 221, 221, 0.4);
+    transition: color 0.25s ease;
+}
+
+.footer__contact-value:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer__social {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 1;
+    color: #ddd;
+    transition: opacity 0.25s ease;
+}
+
+.footer__social:hover {
+    opacity: 0.65;
+}
+
+/* ========================= from contact.css ========================= */
+.hero--contact {
+    padding-top: 442px;
+    justify-content: space-between;
+}
+
+.co-hero__eyebrow {
+    display: block;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 109%;
+    letter-spacing: -0.03em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.co-hero__title {
+    margin-top: 2px;
+    font-weight: 300;
+    font-size: 220px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.hero__bottom--contact {
+    align-items: flex-end;
+}
+
+.co-form {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.co-form__left {
+    flex-shrink: 0;
+    width: 466px;
+}
+
+.co-form__message {
+    width: 487px;
+    min-height: 180px;
+    padding: 18px 22px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    background: rgba(255, 255, 255, 0.02);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.3;
+    letter-spacing: -0.04em;
+    color: #fff;
+    resize: none;
+}
+
+.co-form__message::placeholder {
+    color: #fff;
+}
+
+.co-form__message:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.co-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 130px;
+}
+
+.co-contacts .footer__contact-value,
+.co-contacts .footer__social {
+    color: #fff;
+}
+
+.hero--contact .contact__select-list {
+    top: auto;
+    bottom: calc(100% + 6px);
+    transform: translateY(6px);
+}
+
+.hero--contact .contact__select.is-open .contact__select-list {
+    transform: translateY(0);
+}

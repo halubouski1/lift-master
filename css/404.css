@@ -1,0 +1,207 @@
+/* ==========================================================================
+   404
+   ==========================================================================
+   One full-screen block: the shot fills the viewport, the header sits on it as
+   it does everywhere else, and the whole content column is centred over it. */
+.error {
+    position: relative;
+    display: flex;
+    min-height: var(--fixed-vh, 100vh);
+    padding-top: 195px;
+    padding-bottom: 80px;
+    background: #000 url(../assets/img/404-bg.webp) no-repeat center / cover;
+    color: #FFF;
+}
+
+/* A light scrim from the bottom so the paragraph and the button stay legible
+   over the brightest part of the photo — the same one the heroes use. */
+.error::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, .45) 0%, rgba(0, 0, 0, .15) 35%, rgba(0, 0, 0, 0) 65%);
+    pointer-events: none;
+}
+
+/* The digits sit a little below the middle of the screen: the column is
+   centred and then given more room above than below. */
+.error__container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.error__digits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 610px;
+    margin-bottom: 150px;
+}
+
+.error__digit {
+    font-weight: 400;
+    font-size: 500px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.error__digit--zero {
+    display: none;
+}
+
+.error__bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 232px;
+}
+
+.error__left {
+    display: flex;
+    align-items: end;
+    gap: 60px;
+}
+
+.error__label {
+    flex-shrink: 0;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 85%;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.error__text {
+    max-width: 470px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: #fff;
+}
+
+.error__btn {
+    flex-shrink: 0;
+}
+
+/* ==========================================================================
+   ≤1919px — the same 0.75 scale the rest of the site uses
+   ==========================================================================
+   Every px value above multiplied by 0.75. Percentages, em values and
+   hairlines (1px and under) stay as they are. */
+@media (max-width: 1919px) {
+    .error {
+        padding-top: 146.25px;
+        padding-bottom: 60px;
+    }
+
+    .error__digits {
+        gap: 457.5px;
+        margin-bottom: 112.5px;
+    }
+
+    .error__digit {
+        font-size: 375px;
+    }
+
+    .error__bottom {
+        gap: 174px;
+    }
+
+    .error__left {
+        gap: 45px;
+    }
+
+    .error__label {
+        font-size: 48.75px;
+    }
+
+    .error__text {
+        max-width: 352.5px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .error__digits {
+        gap: 300px;
+    }
+
+    .error__bottom {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 769px) {
+    .error__digit {
+        font-size: 300px;
+    } 
+
+    .error {
+        padding-bottom: 0px;
+    }
+
+    .error__digits {
+        gap: 200px;
+    }
+
+    .error__bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .error__left {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .error__text {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .error__digit--zero {
+        display: block;
+    }
+
+    .error__digits {
+        gap: 0;
+    }
+}
+
+@media (max-width: 570px) {
+    .error__digits {
+        gap: 0px;
+        margin-bottom: 30px;
+    }
+
+    .error__digit {
+        font-size: 200px;
+    } 
+
+    .btn-arrow {
+        font-size: 16px;
+        padding: 4px 4px 4px 35px;
+        gap: 99px;
+    }
+
+    .btn-arrow__icon {
+        width: 54px;
+        height: 54px;
+    }
+
+    .btn-arrow__icon img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .error__label {
+        font-size: 30px;
+    } 
+}
