@@ -297,7 +297,7 @@
 
 /* cta */
 .cta__inner {
-    background: url(../assets/img/about-cta-bg.jpg) no-repeat center / cover;
+    background: url(../assets/img/about-cta-bg.webp) no-repeat center / cover;
 }
 
 .cta__inner::after {
